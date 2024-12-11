@@ -30,23 +30,23 @@
       </svg>
     </a>
     <nav class="navigation">
-      <button class="navigation__toogle" type="button">
+      <button class="navigation__toogle button" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="navigation__wrapper">
         <ul class="navigation__list site-list list-reset">
           <li class="site-list__item">
-            <a href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item site-list__item--current">
-            <a href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__link" href="#">
               Подбор программы
             </a>
           </li>
@@ -81,7 +81,7 @@
               <span class="card__char-value">700 ₽</span>
             </li>
           </ul>
-          <button class="catalog__button catalog__button--order" type="button">Заказать</button>
+          <button class="catalog__button catalog__button--order button" type="button">Заказать</button>
         </article>
         <article class="catalog__item card">
           <picture>
@@ -106,7 +106,7 @@
               <span class="card__char-value">1000 ₽</span>
             </li>
           </ul>
-          <button class="card__button card__button--order" type="button">Заказать</button>
+          <button class="card__button card__button--order button" type="button">Заказать</button>
         </article>
         <article class="catalog__item card">
           <picture>
@@ -129,7 +129,7 @@
               <span class="card__char-value">700 ₽</span>
             </li>
           </ul>
-          <button class="card__button card__button--order" type="button">Заказать</button>
+          <button class="card__button card__button--order button" type="button">Заказать</button>
         </article>
         <article class="catalog__item card">
           <picture>
@@ -154,7 +154,7 @@
               <span class="card__char-value">1000 ₽</span>
             </li>
           </ul>
-          <button class="card__button card__button--order" type="button">Заказать</button>
+          <button class="card__button card__button--order button" type="button">Заказать</button>
         </article>
         <article class="catalog__item card">
           <picture>
@@ -177,7 +177,7 @@
               <span class="card__char-value">400 ₽</span>
             </li>
           </ul>
-          <button class="card__button card__button--order" type="button">Заказать</button>
+          <button class="card__button card__button--order button" type="button">Заказать</button>
         </article>
         <article class="catalog__item card">
           <picture>
@@ -202,7 +202,7 @@
               <span class="card__char-value">700 ₽</span>
             </li>
           </ul>
-          <button class="card__button card__button--order" type="button">Заказать</button>
+          <button class="card__button card__button--order button" type="button">Заказать</button>
         </article>
         <article class="catalog__item card">
           <picture>
@@ -225,13 +225,13 @@
               <span class="card__char-value">500 ₽</span>
             </li>
           </ul>
-          <button class="card__button card__button--order" type="button">Заказать</button>
+          <button class="card__button card__button--order button" type="button">Заказать</button>
         </article>
         <article class="catalog__item card">
           <h3 class="card__subtitle">Показать еще 100500 товаров</h3>
           <span class="card__more">На самом деле вкусов гораздо больше!</span>
 
-          <button class="card__button-more card__button-more--order" type="button">Показать все</button>
+          <button class="card__button-more card__button-more--order button" type="button">Показать все</button>
         </article>
       </div>
     </section>
@@ -244,25 +244,25 @@
             <h3 class="extra__subtitle">Сахарозаменитель</h3>
             <span class="extra__description">1 упаковка (100г)</span>
             <span class="extra__price">200 ₽</span>
-            <button class="extra__button extra__button--order" type="button">Заказать</button>
+            <button class="extra__button extra__button--order button" type="button">Заказать</button>
           </li>
           <li class="extra__item">
             <h3 class="extra__subtitle">Питьевая вода</h3>
             <span class="extra__description">5 литров</span>
             <span class="extra__price">50 ₽</span>
-            <button class="extra__button extra__button--order" type="button">Заказать</button>
+            <button class="extra__button extra__button--order button" type="button">Заказать</button>
           </li>
           <li class="extra__item">
             <h3 class="extra__subtitle">Молоко</h3>
             <span class="extra__description">1 литр</span>
             <span class="extra__price">100 ₽</span>
-            <button class="extra__button extra__button--order" type="button">Заказать</button>
+            <button class="extra__button extra__button--order button" type="button">Заказать</button>
           </li>
           <li class="extra__item">
             <h3 class="extra__subtitle">Витамины</h3>
             <span class="extra__description">1 упаковка (30г)</span>
             <span class="extra__price">300 ₽</span>
-            <button class="extra__button extra__button--order" type="button">Заказать</button>
+            <button class="extra__button extra__button--order button" type="button">Заказать</button>
           </li>
         </ul>
         <div class="extra__aside aside">
@@ -286,17 +286,16 @@
       <form class="subscribe__search" action="https://echo.htmlacademy.ru" method="post">
         <label class="visually-hidden" for="subscribe-date">Ваш e-mail</label>
         <input class="subscribe__field field" type="email" id="subscribe-date" name="subscribe-date" placeholder="кuklachev@gmail.com" required>
-        <button class="subscribe__button subscribe__button--active" type="button">Подписаться</button>
+        <button class="subscribe__button subscribe__button--active button" type="button">Подписаться</button>
       </form>
     </section>
 
     <section class="map">
       <h2 class="visually-hidden">Наш адрес</h2>
-      <img src="images/index-map@2x.webp" alt="Мы на карте" width="1440" height="400"><!-- Изменить карту с картинки на настоящую -->
+      <img src="images/index-map@2x.webp" alt="Мы на карте" width="1440" height="400"><!-- Добавить карту -->
       <div class="map__wrapper">
-        <h3 class="map__description">Приглашаем к сотрудничествку дилеров!</h3>
-        <span class="map__address">ул. Большая Конюшенная, д. 19/8</span>
-        <span class="map__city">Санкт-Петербург</span>
+        <h3 class="map__title">Приглашаем к сотрудничествку дилеров!</h3>
+        <span class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
       </div>
     </section>
 

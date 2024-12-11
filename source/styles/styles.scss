@@ -1,9 +1,11 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
 
 /* BLOCKS */
+@import "./blocks/button.scss";
 @import "./blocks/page.scss";
 @import "./blocks/header.scss";
 @import "./blocks/navigation.scss";
@@ -14,11 +16,11 @@
 @import "./blocks/advantages.scss";
 @import "./blocks/example.scss";
 @import "./blocks/slider.scss";
-@import "./blocks/map.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/card.scss";
 @import "./blocks/extra.scss";
 @import "./blocks/aside.scss";
 @import "./blocks/subscribe.scss";
-@import "./blocks/footer.scss";
+@import "./blocks/map.scss";
 @import "./blocks/social.scss";
+@import "./blocks/footer.scss";
