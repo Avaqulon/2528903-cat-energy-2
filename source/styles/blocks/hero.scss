@@ -1,26 +1,17 @@
 .hero__title {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  @include font-oswald(400, 36px, 36px);
   text-align: center;
   color: #ffffff;
 }
 
 .hero__subtitle {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
+  @include font-oswald(400, 14px, 14px);
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .hero__button {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font-oswald(400, 16px, 20px);
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;

@@ -1,38 +1,29 @@
 .card__subtitle {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font-oswald(400, 16px, 20px);
   text-transform: uppercase;
   color: #222222;
 }
 
 .card__char-desk {
-  font-size: 12px;
-  line-height: 16px;
+  @include font-lato(400, 12px, 16px);
   text-align: center;
   color: $base-color-text;
 }
 
 .card__char-value {
-  font-size: 12px;
-  line-height: 16px;
+  @include font-lato(400, 12px, 16px);
   text-align: center;
   color: $base-color-text;
 }
 
 .card__more {
-  font-size: 12px;
-  line-height: 16px;
+  @include font-lato(400, 12px, 16px);
   text-align: center;
   color: $base-color-text;
 }
 
 .card__button-more {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font-oswald(400, 16px, 20px);
   text-transform: uppercase;
   text-align: center;
   color: #444444;
