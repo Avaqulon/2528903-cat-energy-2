@@ -1,6 +1,6 @@
 .map__title {
   @include font-oswald(400, 16px, 20px);
-  text-transform: uppercase;
+  text-transform: $uppercase-text;
   color: #111111;
 }
 

@@ -1,6 +1,6 @@
 .preview__title {
   @include font-oswald(400, 24px, 37px);
-  text-transform: uppercase;
+  text-transform: $uppercase-text;
   color: $color-title;
 }
 
@@ -11,7 +11,7 @@
 
 .preview__link {
   @include font-oswald(400, 16px, 16px);
-  text-transform: uppercase;
-  text-align: center;
+  text-transform: $uppercase-text;
+  text-align: $center-text;
   color: $color-title;
 }
