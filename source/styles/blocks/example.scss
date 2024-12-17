@@ -1,39 +1,36 @@
 .example__title {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  text-align: $center-text;
-  color: $color-title;
+  @include font($font-secondary, 400, 36px, 40px);
+  text-align: center;
+  color: $text-main;
 }
 
 .example__description {
-  @include font-lato(400, 14px, 18px);
-  color: $color-text;
+  @include font($font-primary, 400, 14px, 18px);
+  color: $text-secondary;
 }
 
 .example__stats {
-  @include font-oswald(400, 24px, 24px);
-  text-align: $center-text;
-  color: $color-title;
+  @include font($font-secondary, 400, 24px, 24px);
+  text-align: center;
+  color: $text-main;
 }
 
 .example__loss {
-  @include font-lato(400, 12px, 12px);
-  text-align: $center-text;
-  color: $color-text;
+  @include font($font-primary, 400, 12px, 12px);
+  text-align: center;
+  color: $text-secondary;
 }
 
 .example__food {
-  @include font-oswald(400, 14px, 20px);
-  text-transform: $uppercase-text;
-  text-align: $center-text;
-  color: $color-title;
+  @include font($font-secondary, 400, 14px, 20px);
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-main;
 }
 
 .example__money {
-  @include font-oswald(400, 14px, 20px);
-  text-transform: $uppercase-text;
-  text-align: $center-text;
-  color: $color-title;
+  @include font($font-secondary, 400, 14px, 20px);
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-main;
 }

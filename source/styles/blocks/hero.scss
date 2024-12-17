@@ -1,18 +1,18 @@
 .hero__title {
-  @include font-oswald(400, 36px, 36px);
-  text-align: $center-text;
-  color: $button-text;
+  @include font($font-secondary, 400, 36px, 36px);
+  text-align: center;
+  color: $text-bg; /* текст белый на белом (мобилка) */
 }
 
 .hero__subtitle {
-  @include font-oswald(400, 14px, 14px);
-  text-transform: $uppercase-text;
-  color: $button-text;
+  @include font($font-secondary, 400, 14px, 14px);
+  text-transform: uppercase;
+  color: $text-bg;
 }
 
 .hero__button {
-  @include font-oswald(400, 16px, 20px);
-  text-transform: $uppercase-text;
-  text-align: $center-text;
-  color: $button-text;
+  @include font($font-secondary, 400, 16px, 20px);
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-bg;
 }
