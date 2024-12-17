@@ -1,5 +1,5 @@
 .aside__description {
   @include font-lato(400, 16px, 20px);
   text-align: center;
-  color: #ffffff;
+  color: $button-text;
 }

@@ -1,18 +1,18 @@
 .hero__title {
   @include font-oswald(400, 36px, 36px);
   text-align: center;
-  color: #ffffff;
+  color: $button-text;
 }
 
 .hero__subtitle {
   @include font-oswald(400, 14px, 14px);
   text-transform: uppercase;
-  color: #ffffff;
+  color: $button-text;
 }
 
 .hero__button {
   @include font-oswald(400, 16px, 20px);
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: $button-text;
 }

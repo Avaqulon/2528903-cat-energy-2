@@ -1,7 +1,7 @@
 .extra__title {
   @include font-oswald(400, 24px, 24px);
   text-align: center;
-  color: #000000;
+  color: $color-title;
 }
 
 .extra__subtitle {
@@ -14,18 +14,18 @@
 .extra__description {
   @include font-lato(400, 14px, 14px);
   text-align: center;
-  color: $base-color-text;
+  color: $color-text;
 }
 
 .extra__price {
   @include font-lato(400, 14px, 14px);
   text-align: right;
-  color: $base-color-text;
+  color: $color-text;
 }
 
 .extra__button {
   @include font-oswald(400, 16px, 20px);
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: $button-text;
 }

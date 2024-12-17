@@ -1,13 +1,13 @@
 .subscribe__title {
   @include font-oswald(400, 24px, 24px);
   text-align: center;
-  color: #000000;
+  color: $color-title;
 }
 
 .subscribe__subtitle {
   @include font-oswald(400, 16px, 24px);
   text-align: center;
-  color: #000000;
+  color: $color-title;
 }
 
 .subscribe__field {
@@ -15,12 +15,12 @@
   font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
-  color: #444444;
+  color: $color-text;
 }
 
 .subscribe__button {
   @include font-oswald(400, 20px, 26px);
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: $button-text;
 }

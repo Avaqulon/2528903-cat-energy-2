@@ -1,11 +1,11 @@
 .catalog__title {
   @include font-oswald (400, 36px, 36px);
-  color: #000000;
+  color: $color-title;
 }
 
 .catalog__button {
   @include font-oswald (400, 16px, 20px);
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: $button-text;
 }

@@ -1,4 +1,4 @@
 .footer__html {
   @include font-lato(400, 16px, 20px);
-  color: #444444;
+  color: $color-text;
 }

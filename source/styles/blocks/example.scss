@@ -4,36 +4,36 @@
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-  color: #000000;
+  color: $color-title;
 }
 
 .example__description {
   @include font-lato(400, 14px, 18px);
-  color: #444444;
+  color: $color-text;
 }
 
 .example__stats {
   @include font-oswald(400, 24px, 24px);
   text-align: center;
-  color: #000000;
+  color: $color-title;
 }
 
 .example__loss {
   @include font-lato(400, 12px, 12px);
   text-align: center;
-  color: #444444;
+  color: $color-text;
 }
 
 .example__food {
   @include font-oswald(400, 14px, 20px);
   text-transform: uppercase;
   text-align: center;
-  color: #000000;
+  color: $color-title;
 }
 
 .example__money {
   @include font-oswald(400, 14px, 20px);
   text-transform: uppercase;
   text-align: center;
-  color: #000000;
+  color: $color-title;
 }
