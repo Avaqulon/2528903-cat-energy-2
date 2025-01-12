@@ -8,3 +8,103 @@
   @include font($font-primary, 400, 14px,18px);
   color: $text-secondary;
 }
+
+.advantages__item--leaf {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-main;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 32px;
+    background-image: url("../../icons/stack.svg#index-leaf");
+    background-repeat: no-repeat;
+    background-size: 30px 32px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+}
+
+.advantages__item--powder {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-main;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 29px;
+    background-image: url("../../icons/stack.svg#index-powder");
+    background-repeat: no-repeat;
+    background-size: 26px 29px;
+    position: absolute;
+    top: 15px;
+    left: 17px;
+  }
+}
+
+.advantages__item--instruments {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-main;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 30px;
+    background-image: url("../../icons/stack.svg#index-instruments");
+    background-repeat: no-repeat;
+    background-size: 25px 30px;
+    position: absolute;
+    top: 15px;
+    left: 17px;
+  }
+}
+
+.advantages__item--clock {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-main;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 31px;
+    background-image: url("../../icons/stack.svg#index-clock");
+    background-repeat: no-repeat;
+    background-size: 26px 31px;
+    position: absolute;
+    top: 15px;
+    left: 17px;
+  }
+}

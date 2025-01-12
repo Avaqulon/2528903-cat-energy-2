@@ -15,3 +15,55 @@
   text-align: center;
   color: $text-main;
 }
+
+.preview__title--home {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: $bg-main;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 50px;
+    background-image: url("../../icons/stack.svg#index-home-cat");
+    background-repeat: no-repeat;
+    background-size: 36px 50px;
+    position: absolute;
+    top: -2px;
+    left: 8px;
+  }
+}
+
+.preview__title--hunter {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: $bg-main;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 67px;
+    height: 28px;
+    background-image: url("../../icons/stack.svg#index-hunter-cat");
+    background-repeat: no-repeat;
+    background-size: 67px 28px;
+    position: absolute;
+    top: 9px;
+    left: -9px;
+  }
+}

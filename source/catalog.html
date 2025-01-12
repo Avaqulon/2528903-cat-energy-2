@@ -10,6 +10,7 @@
 </head>
 
 <body class="page__body">
+
   <header class="header">
     <a class="header__logo" href="catalog.html">
       <picture>
@@ -257,7 +258,7 @@
             <button class="extra__button extra__button--order button" type="button">Заказать</button>
           </li>
         </ul>
-        <div class="extra__aside aside">
+        <div class="extra__aside aside aside__image--gift">
           <picture>
             <source media="(min-width: 1440px)" width="245" height="288" type="image/webp" srcset="images/catalog-aside-desktop@1x.webp 1x, images/catalog-aside-desktop@2x.webp 2x">
             <source media="(min-width: 768px)" width="707" height="200" type="image/webp" srcset="images/catalog-aside-tablet@1x.webp 1x, images/catalog-aside-tablet@2x.webp 2x">
@@ -267,9 +268,6 @@
             <source media="(min-width: 768px)" width="707" height="200" type="image/jpg" srcset="images/catalog-aside-tablet@1x.jpg 1x, images/catalog-aside-tablet@2x.jpg 2x">
             <img class="aside__image" src="images/catalog-aside-mobile@1x.jpg" alt="Кот в переноске со скафандром" width="279" height="289" srcset="images/catalog-aside-mobile@2x.jpg 2x">
           </picture>
-          <svg class="extra__sprite-gift" width="78" height="81">
-            <use href="icons/stack.svg#catalog-gift"></use>
-          </svg>
           <span class="aside__description">Закажите все и получите чехол для кота в подарок!</span>
         </div>
       </div>
@@ -308,33 +306,21 @@
         <li class="social__item">
           <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">ВКонтакте</span>
-            <svg class="social__sprite-vk" width="27" height="17">
-              <use href="icons/stack.svg#vk"></use>
-            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/@HTMLAcademyTV">
-            <span class="visually-hidden">Ютуб</span>
-            <svg class="social__sprite-youtube" width="24" height="19">
-              <use href="icons/stack.svg#youtube"></use>
-            </svg>
+            <span class="visually-hidden">Youtube</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм</span>
-            <svg class="social__sprite-telegram" width="20" height="18">
-              <use href="icons/stack.svg#telegram"></use>
-            </svg>
+            <span class="visually-hidden">Telegram</span>
           </a>
         </li>
       </ul>
       <a class="footer__academy footer__academy--link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="footer__html">HTML Academy</span>
-        <svg class="footer__sprite-academy" width="27" height="35">
-          <use href="icons/stack.svg#academy"></use>
-        </svg>
       </a>
     </div>
   </footer>
