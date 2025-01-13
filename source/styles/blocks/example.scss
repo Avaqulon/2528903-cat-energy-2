@@ -48,7 +48,7 @@
 
 .example__wrapper {
   @include flex (flex, column, nowrap);
-  width: 280px;
+  width: calc(100% - 40px);
   margin: 0 auto;
 }
 

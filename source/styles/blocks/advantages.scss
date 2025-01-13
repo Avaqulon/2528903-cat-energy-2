@@ -102,12 +102,13 @@
 }
 
 .advantages {
-  width: 280px;
+  width: calc(100% - 40px);
   margin: 0 auto 49px;
 }
 
 .advantages__item {
   @include flex (flex, row, nowrap);
+  height: 60px;
 
   &:not(:last-child) {
     padding-bottom: 20px;

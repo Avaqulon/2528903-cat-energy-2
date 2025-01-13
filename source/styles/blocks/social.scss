@@ -57,13 +57,13 @@
 
 .social {
   @include flex(flex, row, wrap);
-  margin: 0 auto;
+  justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
   position: relative;
 
   &::before {
-    @include pseudo(280px, 1px);
+    @include pseudo(100%, 1px);
     position: absolute;
     background-color: #d9d9d9;
     top: 18%;
@@ -72,7 +72,7 @@
   }
 
   &::after {
-    @include pseudo(280px, 1px);
+    @include pseudo(100%, 1px);
     position: absolute;
     background-color: #d9d9d9;
     bottom: 18%;
