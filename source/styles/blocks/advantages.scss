@@ -13,18 +13,12 @@
   position: relative;
 
   &::before {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 60px;
+    @include pseudo(60px, 60px);
     background-color: $bg-main;
   }
 
   &::after {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 32px;
+    @include pseudo(30px, 32px);
     background-image: url("../../icons/stack.svg#index-leaf");
     background-repeat: no-repeat;
     background-size: 30px 32px;
@@ -38,18 +32,12 @@
   position: relative;
 
   &::before {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 60px;
+    @include pseudo(60px, 60px);
     background-color: $bg-main;
   }
 
   &::after {
-    content: "";
-    display: block;
-    width: 26px;
-    height: 29px;
+    @include pseudo(26px, 29px);
     background-image: url("../../icons/stack.svg#index-powder");
     background-repeat: no-repeat;
     background-size: 26px 29px;
@@ -63,18 +51,12 @@
   position: relative;
 
   &::before {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 60px;
+    @include pseudo(60px, 60px);
     background-color: $bg-main;
   }
 
   &::after {
-    content: "";
-    display: block;
-    width: 25px;
-    height: 30px;
+    @include pseudo(25px, 30px);
     background-image: url("../../icons/stack.svg#index-instruments");
     background-repeat: no-repeat;
     background-size: 25px 30px;
@@ -88,18 +70,12 @@
   position: relative;
 
   &::before {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 60px;
+    @include pseudo(60px, 60px);
     background-color: $bg-main;
   }
 
   &::after {
-    content: "";
-    display: block;
-    width: 26px;
-    height: 31px;
+    @include pseudo(26px, 31px);
     background-image: url("../../icons/stack.svg#index-clock");
     background-repeat: no-repeat;
     background-size: 26px 31px;

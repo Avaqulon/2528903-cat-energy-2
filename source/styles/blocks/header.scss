@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 13px;
+  padding-left: 20px;
+}
+
+.header__sprite-logo-words {
+  margin: 0 auto;
+}
+
+.header__logo--menu {
+  position: relative;
+
+  &::after {
+    @include pseudo(24px, 24px);
+    mask-image: url("../../icons/stack.svg#header-logo-menu");
+    mask-repeat: no-repeat;
+    mask-size: 24px 24px;
+    mask-position: center left;
+    background-color: #000000;
+    padding-top: 20px;
+    padding-right: 21px;
+  }
+}

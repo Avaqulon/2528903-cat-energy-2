@@ -2,11 +2,29 @@
   @include font($font-secondary, 400, 24px, 37px);
   text-transform: uppercase;
   color: $text-main;
+  padding-top: 30px;
+  padding-left: 90px;
+  padding-bottom: 29px;
+  margin: 0;
 }
 
 .preview__description {
-  @include font($font-secondary, 400, 14px, 18px);
+  @include font($font-primary, 400, 14px, 18px);
   color: $text-secondary;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 33px;
+  padding-bottom: 19px;
+  position: relative;
+
+  &::after {
+    @include pseudo(1px, 240px);
+    background-color: #d9d9d9;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: rotate(90deg);
+  }
 }
 
 .preview__link {
@@ -14,31 +32,55 @@
   text-transform: uppercase;
   text-align: center;
   color: $text-main;
+  text-decoration: none;
+  padding: 19px 50px 18px 20px;
+  position: relative;
+
+  &::before {
+    @include pseudo(8px, 2px);
+    background-color: $text-main;
+    position: absolute;
+    top: 26px;
+    right: 27px;
+  }
+
+  &::after {
+    @include pseudo(24px, 12px);
+    mask-image: url("../../icons/stack.svg#index-arrow");
+    mask-repeat: no-repeat;
+    mask-size: 24px, 12px;
+    background-color: $text-main;
+    position: absolute;
+    top: 21px;
+    right: 11px;
+  }
+
+  &:hover::after {
+    right: 3px;
+    transition: all 0.6s;
+  }
 }
 
 .preview__title--home {
   position: relative;
 
   &::before {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 50px;
+    @include pseudo(50px, 50px);
     background-color: $bg-main;
     border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
   }
 
   &::after {
-    content: "";
-    display: block;
-    width: 36px;
-    height: 50px;
+    @include pseudo(36px, 50px);
     background-image: url("../../icons/stack.svg#index-home-cat");
     background-repeat: no-repeat;
     background-size: 36px 50px;
     position: absolute;
-    top: -2px;
-    left: 8px;
+    top: 17px;
+    left: 27px;
   }
 }
 
@@ -46,24 +88,38 @@
   position: relative;
 
   &::before {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 50px;
+    @include pseudo(50px, 50px);
     background-color: $bg-main;
     border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
   }
 
   &::after {
-    content: "";
-    display: block;
-    width: 67px;
-    height: 28px;
+    @include pseudo(67px, 28px);
     background-image: url("../../icons/stack.svg#index-hunter-cat");
     background-repeat: no-repeat;
     background-size: 67px 28px;
     position: absolute;
-    top: 9px;
-    left: -9px;
+    top: 32px;
+    left: 11px;
   }
+}
+
+.preview__wrapper {
+  @include flex(flex, column, nowrap);
+  min-width: 320px;
+}
+
+.preview__item {
+  @include flex(flex, row, wrap);
+  background-color: $bg-secondary;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.preview {
+  box-sizing: border-box;
 }

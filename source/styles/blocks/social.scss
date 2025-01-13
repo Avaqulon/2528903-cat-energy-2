@@ -1,9 +1,6 @@
 .social__link--vk {
   &::before {
-    content: "";
-    display: block;
-    width: 27px;
-    height: 17px;
+    @include pseudo(27px, 17px);
     mask-image: url("../../icons/stack.svg#vk");
     mask-repeat: no-repeat;
     mask-size: 27px 17px;
@@ -13,10 +10,7 @@
 
 .social__link--youtube {
   &::before {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 19px;
+    @include pseudo(24px, 19px);
     mask-image: url("../../icons/stack.svg#youtube");
     mask-repeat: no-repeat;
     mask-size: 24px 19px;
@@ -26,10 +20,7 @@
 
 .social__link--telegram {
   &::before {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 19px;
+    @include pseudo(24px, 19px);
     mask-image: url("../../icons/stack.svg#telegram");
     mask-repeat: no-repeat;
     mask-size: 24px 19px;

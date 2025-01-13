@@ -9,10 +9,7 @@
 
 .footer__academy--link {
   &::after {
-    content: "";
-    display: block;
-    width: 27px;
-    height: 35px;
+    @include pseudo(27px, 35px);
     mask-image: url("../../icons/stack.svg#academy");
     mask-repeat: no-repeat;
     background-color: #666666;
