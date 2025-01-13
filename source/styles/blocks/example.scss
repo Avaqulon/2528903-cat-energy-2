@@ -1,24 +1,31 @@
 .example__title {
   @include font($font-secondary, 400, 36px, 40px);
-  text-align: center;
+  text-align: left;
   color: $text-main;
+  padding: 25px 20px 40px;
+  margin: 0;
 }
 
 .example__description {
   @include font($font-primary, 400, 14px, 18px);
   color: $text-secondary;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .example__stats {
   @include font($font-secondary, 400, 24px, 24px);
   text-align: center;
   color: $text-main;
+  padding-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .example__loss {
   @include font($font-primary, 400, 12px, 12px);
   text-align: center;
   color: $text-secondary;
+  text-transform: lowercase;
 }
 
 .example__food {
@@ -33,4 +40,24 @@
   text-transform: uppercase;
   text-align: center;
   color: $text-main;
+}
+
+.example {
+  background-color: #eaeaea;
+}
+
+.example__wrapper {
+  @include flex (flex, column, nowrap);
+  width: 280px;
+  margin: 0 auto;
+}
+
+.example__list {
+  @include flex (flex, row, nowrap);
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.example__item {
+  @include flex (flex, column, nowrap);
 }

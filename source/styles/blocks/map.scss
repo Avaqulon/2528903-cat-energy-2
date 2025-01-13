@@ -2,9 +2,23 @@
   @include font($font-secondary, 400, 16px, 20px);
   text-transform: uppercase;
   color: $text-last;
+  margin: 0;
 }
 
 .map__address {
   @include font($font-primary, 400, 14px, 20px);
   color: $text-secondary;
+  margin: 0;
+}
+
+.map {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+.map__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

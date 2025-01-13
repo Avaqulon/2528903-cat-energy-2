@@ -1,12 +1,16 @@
 .advantages__title {
   @include font($font-secondary, 400, 36px, 40px);
-  text-align: center;
+  text-align: left;
   color: $text-main;
+  margin: 0;
+  padding-bottom: 40px;
 }
 
 .advantages__description {
   @include font($font-primary, 400, 14px,18px);
   color: $text-secondary;
+  margin: 0;
+  padding-left: 80px;
 }
 
 .advantages__item--leaf {
@@ -15,6 +19,9 @@
   &::before {
     @include pseudo(60px, 60px);
     background-color: $bg-main;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   &::after {
@@ -34,6 +41,9 @@
   &::before {
     @include pseudo(60px, 60px);
     background-color: $bg-main;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   &::after {
@@ -53,6 +63,9 @@
   &::before {
     @include pseudo(60px, 60px);
     background-color: $bg-main;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   &::after {
@@ -72,6 +85,9 @@
   &::before {
     @include pseudo(60px, 60px);
     background-color: $bg-main;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   &::after {
@@ -84,3 +100,17 @@
     left: 17px;
   }
 }
+
+.advantages {
+  width: 280px;
+  margin: 0 auto 49px;
+}
+
+.advantages__item {
+  @include flex (flex, row, nowrap);
+
+  &:not(:last-child) {
+    padding-bottom: 20px;
+  }
+}
+
