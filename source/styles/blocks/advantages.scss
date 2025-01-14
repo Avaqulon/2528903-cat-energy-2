@@ -108,7 +108,7 @@
 
 .advantages__item {
   @include flex (flex, row, nowrap);
-  height: 60px;
+  min-height: 60px;
 
   &:not(:last-child) {
     padding-bottom: 20px;

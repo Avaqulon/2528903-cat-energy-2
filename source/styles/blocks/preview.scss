@@ -112,13 +112,31 @@
 
 .preview__wrapper {
   @include flex(flex, column, nowrap);
-  min-width: 320px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .preview__wrapper {
+    @include flex(flex, column, nowrap);
+    width: calc(100% - 60px);
+    margin: 0 auto;
+  }
 }
 
 .preview__item {
   @include flex(flex, row, wrap);
   background-color: $bg-secondary;
-  width: calc(100% - 40px);
-  margin: 0 auto;
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .preview__item {
+    @include flex(flex, column, wrap);
+    background-color: $bg-secondary;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }

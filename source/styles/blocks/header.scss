@@ -1,8 +1,15 @@
 .header {
-  display: flex;
-  flex-direction: column;
+  @include flex(flex, column, nowrap);
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .header {
+    @include flex(flex, row, wrap);
+    width: calc(100% - 60px);
+  }
+}
+
 
 .header__logo {
   display: flex;
@@ -11,10 +18,18 @@
   justify-content: space-between;
   padding-top: 13px;
   padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .header__sprite-logo-words {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
 }
 
 .header__logo--menu {
@@ -29,5 +44,9 @@
     background-color: #000000;
     padding-top: 20px;
     padding-right: 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
