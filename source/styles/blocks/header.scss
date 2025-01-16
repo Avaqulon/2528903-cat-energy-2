@@ -1,52 +1,48 @@
 .header {
-  @include flex(flex, column, nowrap);
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include flex (flex, row, nowrap);
+    width: calc(100% - 64px);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .header {
-    @include flex(flex, row, wrap);
-    width: calc(100% - 60px);
+    width: calc(100% - 64px);
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 65px;
   }
 }
 
 
 .header__logo {
-  display: flex;
-  flex-direction: row;
+  @include flex (flex, row, nowrap);
+  width: calc(100% - 64px);
   align-items: center;
-  justify-content: space-between;
   padding-top: 13px;
   padding-left: 20px;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    @include flex (flex, row, nowrap);
+    align-items: center;
+    padding: 0;
+    width: 174px;
   }
 }
 
 .header__sprite-logo-words {
   margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 20px;
-  }
 }
 
-.header__logo--menu {
+.site-list__item--current {
   position: relative;
 
   &::after {
-    @include pseudo(24px, 24px);
-    mask-image: url("../../icons/stack.svg#header-logo-menu");
-    mask-repeat: no-repeat;
-    mask-size: 24px 24px;
-    mask-position: center left;
-    background-color: #000000;
-    padding-top: 20px;
-    padding-right: 21px;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
+    @include pseudo (64px, 2px);
+    position: absolute;
+    background-color: red;
+    bottom: -8px;
   }
 }
