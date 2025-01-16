@@ -42,7 +42,7 @@
   &::after {
     @include pseudo (64px, 2px);
     position: absolute;
-    background-color: red;
+    background-color: $bg-main;
     bottom: -8px;
   }
 }
