@@ -12,13 +12,17 @@
 }
 
 .map {
-  width: calc(100% - 40px);
+  width: 100%;
   margin: 0 auto;
 }
 
 .map__wrapper {
+  width: calc(100% - 40px);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
+}
+
+.map__picture {
+  width: 100%;
 }
