@@ -1,3 +1,36 @@
+.preview {
+  @include flex(flex, column, nowrap);
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .preview {
+    @include flex(flex, column, nowrap);
+    width: calc(100% - 60px);
+    margin: 0 auto;
+  }
+}
+
+.preview__item {
+  @include flex(flex, row, wrap);
+  background-color: $bg-secondary;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .preview__item {
+    @include flex(flex, column, nowrap);
+    background-color: $bg-secondary;
+    position: relative;
+    min-height: 372px;
+
+    &:last-child {
+      margin-bottom: 45px;
+    }
+  }
+}
+
 .preview__title {
   @include font($font-secondary, 400, 24px, 37px);
   text-transform: uppercase;
@@ -6,6 +39,108 @@
   padding-left: 90px;
   padding-bottom: 29px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font($font-secondary, 400, 36px, 36px);
+    text-transform: uppercase;
+    color: $text-main;
+    padding-top: 74px;
+    padding-bottom: 27px;
+    padding-left: 53px;
+    width: 43%;
+  }
+}
+
+.preview__title--home {
+  position: relative;
+
+  &::before {
+    @include pseudo(50px, 50px);
+    background-color: $bg-main;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+
+  &::after {
+    @include pseudo(36px, 50px);
+    background-image: url("../../icons/stack.svg#index-home-cat");
+    background-repeat: no-repeat;
+    background-size: 36px 50px;
+    position: absolute;
+    top: 17px;
+    left: 27px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      @include pseudo(200px, 200px);
+      background-color: $bg-main;
+      border-radius: 50%;
+      position: absolute;
+      top: 3em;
+      left: 13em;
+    }
+
+
+    &::after {
+      @include pseudo(140px, 194px);
+      background-image: url("../../icons/stack.svg#index-home-cat");
+      background-repeat: no-repeat;
+      background-size: 140px 194px;
+      position: absolute;
+      top: 3em;
+      left: 14em;
+    }
+  }
+}
+
+.preview__title--hunter {
+  position: relative;
+
+  &::before {
+    @include pseudo(50px, 50px);
+    background-color: $bg-main;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+
+  &::after {
+    @include pseudo(67px, 28px);
+    background-image: url("../../icons/stack.svg#index-hunter-cat");
+    background-repeat: no-repeat;
+    background-size: 67px 28px;
+    position: absolute;
+    top: 32px;
+    left: 11px;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      @include pseudo(200px, 200px);
+      background-color: $bg-main;
+      border-radius: 50%;
+      position: absolute;
+      top: 3em;
+      left: 13em;
+    }
+
+
+    &::after {
+      @include pseudo(268px, 112px);
+      background-image: url("../../icons/stack.svg#index-hunter-cat");
+      background-repeat: no-repeat;
+      background-size: 268px 112px;
+      position: absolute;
+      top: 4em;
+      left: 12em;
+    }
+  }
 }
 
 .preview__description {
@@ -27,10 +162,38 @@
     left: 20px;
     right: 20px;
   }
+
+  @media (min-width: $tablet-width) {
+    @include font($font-primary, 400, 16px, 24px);
+    color: $text-main;
+    padding: 27px 0 48px 52px;
+    position: static;
+    width: 43%;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.preview__link {
+  @include font($font-secondary, 400, 16px, 16px);
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-main;
+  text-decoration: none;
+  padding: 19px 50px 18px 20px;
+
+  @media (min-width: $tablet-width) {
+    @include font($font-secondary, 400, 20px, 20px);
+    text-align: left;
+    padding-bottom: 57px;
+    padding-left: 52px;
+    width: 107px;
+  }
 }
 
 .preview__link--active {
-  padding: 19px 50px 18px 20px;
   position: relative;
 
   &::before {
@@ -56,89 +219,30 @@
     right: 3px;
     transition: all 0.6s;
   }
-}
 
-.preview__link {
-  @include font($font-secondary, 400, 16px, 16px);
-  text-transform: uppercase;
-  text-align: center;
-  color: $text-main;
-  text-decoration: none;
-}
+  @media (min-width: $tablet-width) {
+    &::before {
+      @include pseudo(18px, 2px);
+      background-color: $text-main;
+      position: absolute;
+      top: 28px;
+      right: 10px;
+    }
 
-.preview__title--home {
-  position: relative;
+    &::after {
+      @include pseudo(24px, 12px);
+      mask-image: url("../../icons/stack.svg#index-arrow");
+      mask-repeat: no-repeat;
+      mask-size: 24px, 12px;
+      background-color: $text-main;
+      position: absolute;
+      top: 23px;
+      right: 4px;
+    }
 
-  &::before {
-    @include pseudo(50px, 50px);
-    background-color: $bg-main;
-    border-radius: 50%;
-    position: absolute;
-    left: 20px;
-    top: 20px;
-  }
-
-  &::after {
-    @include pseudo(36px, 50px);
-    background-image: url("../../icons/stack.svg#index-home-cat");
-    background-repeat: no-repeat;
-    background-size: 36px 50px;
-    position: absolute;
-    top: 17px;
-    left: 27px;
-  }
-}
-
-.preview__title--hunter {
-  position: relative;
-
-  &::before {
-    @include pseudo(50px, 50px);
-    background-color: $bg-main;
-    border-radius: 50%;
-    position: absolute;
-    left: 20px;
-    top: 20px;
-  }
-
-  &::after {
-    @include pseudo(67px, 28px);
-    background-image: url("../../icons/stack.svg#index-hunter-cat");
-    background-repeat: no-repeat;
-    background-size: 67px 28px;
-    position: absolute;
-    top: 32px;
-    left: 11px;
-  }
-}
-
-.preview {
-  @include flex(flex, column, nowrap);
-  width: calc(100% - 40px);
-  margin: 0 auto;
-}
-
-@media (min-width: $tablet-width) {
-  .preview {
-    @include flex(flex, column, nowrap);
-    width: calc(100% - 60px);
-    margin: 0 auto;
-  }
-}
-
-.preview__item {
-  @include flex(flex, row, wrap);
-  background-color: $bg-secondary;
-  margin-bottom: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .preview__item {
-    @include flex(flex, column, wrap);
-    background-color: $bg-secondary;
-
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    &:hover::after {
+      right: -3px;
+      transition: all 0.6s;
     }
   }
 }
