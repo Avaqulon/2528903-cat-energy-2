@@ -1,9 +1,39 @@
+.example {
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(#ffffff 0% 50%, #eaeaea 50%);
+  }
+}
+
 .example__title {
   @include font($font-secondary, 400, 36px, 40px);
   text-align: left;
   color: $text-main;
   padding: 25px 20px 40px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font($font-secondary, 400, 36px, 40px);
+    text-align: left;
+    color: $text-main;
+    padding: 0;
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+    width: 60%;
+  }
+}
+
+.example__wrapper {
+  @include flex (flex, column, nowrap);
+  width: calc(100% - 40px);
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    @include flex (flex, row, wrap);
+    width: calc(100% - 60px);
+  }
 }
 
 .example__description {
@@ -11,6 +41,40 @@
   color: $text-secondary;
   margin: 0;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include font($font-primary, 400, 16px, 24px);
+    color: $text-secondary;
+    padding: 0;
+    padding-bottom: 55px;
+    width: 100%;
+  }
+}
+
+.example__list {
+  @include flex (flex, row, nowrap);
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    @include flex (flex, row, wrap);
+    max-width: 55%;
+    justify-content: flex-start;
+    gap: 43px;
+  }
+}
+
+.example__item {
+  @include flex (flex, column, nowrap);
+  width: 124px;
+  min-height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    min-height: 77px;
+  }
 }
 
 .example__stats {
@@ -19,6 +83,14 @@
   color: $text-main;
   text-transform: uppercase;
   padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    @include font($font-secondary, 400, 30px, 37px);
+    text-align: center;
+    color: $text-main;
+    text-transform: uppercase;
+    padding-top: 18px;
+  }
 }
 
 .example__loss {
@@ -30,6 +102,16 @@
   top: 9px;
   background-color: #eaeaea;
   min-width: 87px;
+
+  @media (min-width: $tablet-width) {
+    @include font($font-primary, 400, 14px, 14px);
+    text-align: center;
+    color: $text-secondary;
+    text-transform: lowercase;
+    background-color: #ffffff;
+    top: 13px;
+    padding: 0 9px;
+  }
 }
 
 .example__food {
@@ -38,28 +120,29 @@
   text-align: center;
   color: $text-main;
   margin-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    @include font($font-secondary, 400, 20px, 20px);
+    text-transform: uppercase;
+    text-align: right;
+    color: $text-main;
+    margin: 0;
+    margin-left: auto;
+    max-width: 35%;
+    padding-top: 11px;
+  }
 }
 
-.example {
-  background-color: #eaeaea;
+.example__mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.example__wrapper {
-  @include flex (flex, column, nowrap);
-  width: calc(100% - 40px);
-  margin: 0 auto;
-}
+.example__tablet {
+  display: none;
 
-.example__list {
-  @include flex (flex, row, nowrap);
-  justify-content: space-between;
-}
-
-.example__item {
-  @include flex (flex, column, nowrap);
-  width: 124px;
-  height: 56px;
-  border: 1px solid #cdcdcd;
-  border-radius: 4px;
-  align-items: center;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
