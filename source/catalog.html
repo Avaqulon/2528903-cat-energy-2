@@ -12,13 +12,13 @@
 <body class="page__body">
 
   <header class="header">
-    <a class="header__logo" href="catalog.html">
+    <a class="header__logo header__logo--menu" href="catalog.html">
       <picture>
         <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
         <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
         <img src="images/logo-mobile.svg" alt="Логотип" width="33" height="38">
       </picture>
-      <svg class="header__sprite-logo-words" width="101" height="20">
+      <svg class="header__sprite-logo-words" width="101" height="18">
         <use href="icons/stack.svg#logo-words"></use>
       </svg>
     </a>
@@ -231,46 +231,37 @@
 
     <section class="extra">
       <h2 class="extra__title">Дополнительные товары</h2>
-      <div class="extra__wrapper">
-        <ul class="extra__list list-reset">
-          <li class="extra__item">
-            <h3 class="extra__subtitle">Сахарозаменитель</h3>
-            <span class="extra__description">1 упаковка (100г)</span>
-            <span class="extra__price">200 ₽</span>
-            <button class="extra__button extra__button--order button" type="button">Заказать</button>
-          </li>
-          <li class="extra__item">
-            <h3 class="extra__subtitle">Питьевая вода</h3>
-            <span class="extra__description">5 литров</span>
-            <span class="extra__price">50 ₽</span>
-            <button class="extra__button extra__button--order button" type="button">Заказать</button>
-          </li>
-          <li class="extra__item">
-            <h3 class="extra__subtitle">Молоко</h3>
-            <span class="extra__description">1 литр</span>
-            <span class="extra__price">100 ₽</span>
-            <button class="extra__button extra__button--order button" type="button">Заказать</button>
-          </li>
-          <li class="extra__item">
-            <h3 class="extra__subtitle">Витамины</h3>
-            <span class="extra__description">1 упаковка (30г)</span>
-            <span class="extra__price">300 ₽</span>
-            <button class="extra__button extra__button--order button" type="button">Заказать</button>
-          </li>
-        </ul>
-        <div class="extra__aside aside aside__image--gift">
-          <!--           <picture>
-            <source media="(min-width: 1440px)" width="245" height="288" type="image/webp" srcset="images/catalog/catalog-aside-desktop@1x.webp 1x, images/catalog/catalog-aside-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" width="707" height="200" type="image/webp" srcset="images/catalog/catalog-aside-tablet@1x.webp 1x, images/catalog/catalog-aside-tablet@2x.webp 2x">
-            <source width="279" height="289" type="image/webp" srcset="images/catalog/catalog-aside-mobile@1x.webp 1x, images/catalog/catalog-aside-mobile@2x.webp 2x">
-
-            <source media="(min-width: 1440px)" width="245" height="288" type="image/png" srcset="images/catalog/catalog-aside-desktop@1x.png 1x, images/catalog/catalog-aside-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" width="707" height="200" type="image/png" srcset="images/catalog/catalog-aside-tablet@1x.png 1x, images/catalog/catalog-aside-tablet@2x.png 2x">
-            <img class="aside__image" src="images/catalog/catalog-aside-mobile@1x.png" alt="Кот в переноске со скафандром" width="279" height="289" srcset="images/catalog/catalog-aside-mobile@2x.png 2x">
-          </picture> -->
-          <span class="aside__description">Закажите все и получите чехол для кота в подарок!</span>
-        </div>
+      <!-- <div class="extra__wrapper"> -->
+      <ul class="extra__list list-reset">
+        <li class="extra__item">
+          <h3 class="extra__subtitle">Сахарозаменитель</h3>
+          <span class="extra__description">1 упаковка (100г)</span>
+          <span class="extra__price">200 ₽</span>
+          <button class="extra__button extra__button--order button" type="button">Заказать</button>
+        </li>
+        <li class="extra__item">
+          <h3 class="extra__subtitle">Питьевая вода</h3>
+          <span class="extra__description">5 литров</span>
+          <span class="extra__price">50 ₽</span>
+          <button class="extra__button extra__button--order button" type="button">Заказать</button>
+        </li>
+        <li class="extra__item">
+          <h3 class="extra__subtitle">Молоко</h3>
+          <span class="extra__description">1 литр</span>
+          <span class="extra__price">100 ₽</span>
+          <button class="extra__button extra__button--order button" type="button">Заказать</button>
+        </li>
+        <li class="extra__item">
+          <h3 class="extra__subtitle">Витамины</h3>
+          <span class="extra__description">1 упаковка (30г)</span>
+          <span class="extra__price">300 ₽</span>
+          <button class="extra__button extra__button--order button" type="button">Заказать</button>
+        </li>
+      </ul>
+      <div class="extra__aside aside aside__image--gift">
+        <span class="aside__description">Закажите все и получите чехол для кота в подарок!</span>
       </div>
+      <!-- </div> -->
     </section>
 
     <section class="subscribe">

@@ -1,5 +1,8 @@
 .header {
+  @include flex (flex, row, nowrap);
   text-align: center;
+  align-items: center;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     @include flex (flex, row, nowrap);

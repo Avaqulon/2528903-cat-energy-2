@@ -112,14 +112,14 @@
   }
 }
 
-.preview__wrapper {
+.preview {
   @include flex(flex, column, nowrap);
   width: calc(100% - 40px);
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
-  .preview__wrapper {
+  .preview {
     @include flex(flex, column, nowrap);
     width: calc(100% - 60px);
     margin: 0 auto;

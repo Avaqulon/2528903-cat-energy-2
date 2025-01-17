@@ -17,8 +17,8 @@
   @include font($font-secondary, 400, 24px, 24px);
   text-align: center;
   color: $text-main;
-  padding-bottom: 8px;
   text-transform: uppercase;
+  padding-top: 13px;
 }
 
 .example__loss {
@@ -26,6 +26,10 @@
   text-align: center;
   color: $text-secondary;
   text-transform: lowercase;
+  position: relative;
+  top: 9px;
+  background-color: #eaeaea;
+  min-width: 87px;
 }
 
 .example__food {
@@ -33,13 +37,7 @@
   text-transform: uppercase;
   text-align: center;
   color: $text-main;
-}
-
-.example__money {
-  @include font($font-secondary, 400, 14px, 20px);
-  text-transform: uppercase;
-  text-align: center;
-  color: $text-main;
+  margin-top: 34px;
 }
 
 .example {
@@ -54,10 +52,14 @@
 
 .example__list {
   @include flex (flex, row, nowrap);
-  justify-content: space-around;
-  padding-bottom: 20px;
+  justify-content: space-between;
 }
 
 .example__item {
   @include flex (flex, column, nowrap);
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  align-items: center;
 }

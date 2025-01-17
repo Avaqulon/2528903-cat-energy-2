@@ -9,36 +9,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .navigation-toogle {
+  .navigation__toogle {
     display: none;
   }
 }
 
-.navigation-wrapper {
+.navigation__list {
   display: none;
 }
 
-@media (min-width: $tablet-width) {
-  .navigation-wrapper {
-    @include flex (flex, row, wrap);
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .navigation-list {
-    @include flex(flex, row, wrap);
-    align-items: center;
-    margin-left: 89px;
-  }
-}
-
-.navigation-toogle {
+.navigation__toogle {
   background-color: #000000;
   width: 24px;
   height: 2px;
   position: relative;
-  top: -35px;
-  right: calc(40px - 50%);
   border: none;
   padding: 0;
 
