@@ -44,10 +44,8 @@
     @include font($font-secondary, 400, 36px, 36px);
     text-transform: uppercase;
     color: $text-main;
-    padding-top: 74px;
-    padding-bottom: 27px;
-    padding-left: 53px;
-    width: 43%;
+    padding: 74px 1px 27px 53px;
+    width: 70%;
   }
 }
 
@@ -79,8 +77,9 @@
       background-color: $bg-main;
       border-radius: 50%;
       position: absolute;
-      top: 3em;
-      left: 13em;
+      left: auto;
+      top: 70px;
+      right: -20%;
     }
 
 
@@ -90,8 +89,9 @@
       background-repeat: no-repeat;
       background-size: 140px 194px;
       position: absolute;
-      top: 3em;
-      left: 14em;
+      top: 70px;
+      left: auto;
+      right: -17%;
     }
   }
 }
@@ -126,8 +126,9 @@
       background-color: $bg-main;
       border-radius: 50%;
       position: absolute;
-      top: 3em;
-      left: 13em;
+      left: auto;
+      top: 70px;
+      right: -20%;
     }
 
 
@@ -137,8 +138,9 @@
       background-repeat: no-repeat;
       background-size: 268px 112px;
       position: absolute;
-      top: 4em;
-      left: 12em;
+      top: 110px;
+      left: auto;
+      right: -23%;
     }
   }
 }

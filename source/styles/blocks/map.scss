@@ -1,16 +1,3 @@
-.map__title {
-  @include font($font-secondary, 400, 16px, 20px);
-  text-transform: uppercase;
-  color: $text-last;
-  margin: 0;
-}
-
-.map__address {
-  @include font($font-primary, 400, 14px, 20px);
-  color: $text-secondary;
-  margin: 0;
-}
-
 .map {
   width: 100%;
   margin: 0 auto;
@@ -21,8 +8,56 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include flex(flex, row, wrap);
+    justify-content: space-between;
+    margin: 0 auto;
+    width: calc(100% - 140px);
+    padding: 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.map__title {
+  @include font($font-secondary, 400, 16px, 20px);
+  text-transform: uppercase;
+  color: $text-last;
+  margin: 0;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    @include font($font-secondary, 400, 20px, 26px);
+    text-transform: uppercase;
+    color: $text-last;
+    text-align: left;
+    width: 35%;
+  }
+}
+
+.map__address {
+  @include font($font-primary, 400, 14px, 20px);
+  color: $text-secondary;
+  margin: 0;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    @include font($font-primary, 400, 16px, 20px);
+    color: $text-secondary;
+    text-align: right;
+    width: 25%;
+  }
+}
+
+.map__tablet {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 18px;
+  }
 }
 
 .map__picture {
   width: 100%;
 }
+

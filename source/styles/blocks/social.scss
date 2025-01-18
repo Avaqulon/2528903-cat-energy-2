@@ -1,3 +1,53 @@
+.social {
+  @include flex(flex, row, wrap);
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+
+  &::before {
+    @include pseudo(100%, 1px);
+    position: absolute;
+    background-color: #d9d9d9;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    @include pseudo(100%, 1px);
+    position: absolute;
+    background-color: #d9d9d9;
+    bottom: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    @include flex(flex, row, wrap);
+    align-items: center;
+    padding: 0;
+    width: 30%;
+    gap: 24px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.social__item:not(:last-child) {
+  margin-right: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
 .social__link--vk {
   &::before {
     @include pseudo(27px, 17px);
@@ -53,34 +103,4 @@
   &:active::before {
     opacity: 0.5;
   }
-}
-
-.social {
-  @include flex(flex, row, wrap);
-  justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  position: relative;
-
-  &::before {
-    @include pseudo(100%, 1px);
-    position: absolute;
-    background-color: #d9d9d9;
-    top: 18%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &::after {
-    @include pseudo(100%, 1px);
-    position: absolute;
-    background-color: #d9d9d9;
-    bottom: 18%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-.social__item:not(:last-child) {
-  margin-right: 24px;
 }
