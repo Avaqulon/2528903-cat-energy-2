@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin-bottom: 71px;
   }
 }
 
@@ -38,10 +39,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     @include flex(flex, column, nowrap);
     width: 570px;
     min-height: 374px;
-    margin-bottom: 45px;
+    margin-bottom: 0;
   }
 }
 

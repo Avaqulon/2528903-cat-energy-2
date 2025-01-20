@@ -18,6 +18,16 @@
       right: -30px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    position: static;
+    margin-bottom: 69px;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .advantages__title {
@@ -41,6 +51,12 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 37px;
   }
+
+  @media (min-width: $desktop-width) {
+    @include flex(flex, row, wrap);
+    justify-content: space-between;
+    row-gap: 0;
+  }
 }
 
 .advantages__item {
@@ -58,6 +74,10 @@
     &:not(:last-child) {
       padding-bottom: 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 250px;
   }
 }
 
@@ -242,6 +262,10 @@
     padding: 0;
     padding-top: 151px;
     width: 70%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
   }
 }
 
