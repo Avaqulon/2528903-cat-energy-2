@@ -1,14 +1,23 @@
 .preview {
-  @include flex(flex, column, nowrap);
   width: calc(100% - 40px);
   margin: 0 auto;
-}
 
-@media (min-width: $tablet-width) {
-  .preview {
-    @include flex(flex, column, nowrap);
+  @media (min-width: $tablet-width) {
     width: calc(100% - 60px);
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.preview__list {
+  @include flex(flex, column, wrap);
+
+  @media (min-width: $desktop-width) {
+    @include flex(flex, row, wrap);
+    justify-content: space-between;
   }
 }
 
@@ -16,10 +25,8 @@
   @include flex(flex, row, wrap);
   background-color: $bg-secondary;
   margin-bottom: 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .preview__item {
+  @media (min-width: $tablet-width) {
     @include flex(flex, column, nowrap);
     background-color: $bg-secondary;
     position: relative;
@@ -28,6 +35,13 @@
     &:last-child {
       margin-bottom: 45px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flex(flex, column, nowrap);
+    width: 570px;
+    min-height: 374px;
+    margin-bottom: 45px;
   }
 }
 
@@ -46,6 +60,14 @@
     color: $text-main;
     padding: 74px 1px 27px 53px;
     width: 70%;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    width: 220px;
+    margin: 77px 0 73px 11px;
+    padding: 0;
+    align-self: center;
   }
 }
 
@@ -92,6 +114,30 @@
       top: 70px;
       left: auto;
       right: -17%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      @include pseudo(100px, 100px);
+      background-color: $bg-main;
+      border-radius: 50%;
+      position: absolute;
+      top: -30px;
+      right: auto;
+      left: -130px;
+    }
+
+
+    &::after {
+      @include pseudo(70px, 97px);
+      background-image: url("../../icons/stack.svg#index-home-cat");
+      background-repeat: no-repeat;
+      background-size: 70px 97px;
+      position: absolute;
+      top: -33px;
+      left: -115px;
+      right: auto;
     }
   }
 }
@@ -143,6 +189,30 @@
       right: -23%;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      @include pseudo(100px, 100px);
+      background-color: $bg-main;
+      border-radius: 50%;
+      position: absolute;
+      top: -30px;
+      right: auto;
+      left: -130px;
+    }
+
+
+    &::after {
+      @include pseudo(134px, 56px);
+      background-image: url("../../icons/stack.svg#index-hunter-cat");
+      background-repeat: no-repeat;
+      background-size: 134px 56px;
+      position: absolute;
+      top: -10px;
+      left: -150px;
+      right: auto;
+    }
+  }
 }
 
 .preview__description {
@@ -176,6 +246,14 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding: 0;
+    padding-left: 52px;
+    padding-bottom: 27px;
+    width: 460px;
+  }
 }
 
 .preview__link {
@@ -192,6 +270,13 @@
     padding-bottom: 57px;
     padding-left: 52px;
     width: 107px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 110px;
+    padding: 0;
+    margin-left: 52px;
+    margin-bottom: 59px;
   }
 }
 
@@ -244,6 +329,32 @@
 
     &:hover::after {
       right: -3px;
+      transition: all 0.6s;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      @include pseudo(18px, 2px);
+      background-color: $text-main;
+      position: absolute;
+      top: 10px;
+      right: -38px;
+    }
+
+    &::after {
+      @include pseudo(24px, 12px);
+      mask-image: url("../../icons/stack.svg#index-arrow");
+      mask-repeat: no-repeat;
+      mask-size: 24px, 12px;
+      background-color: $text-main;
+      position: absolute;
+      top: 5px;
+      right: -44px;
+    }
+
+    &:hover::after {
+      right: -53px;
       transition: all 0.6s;
     }
   }
