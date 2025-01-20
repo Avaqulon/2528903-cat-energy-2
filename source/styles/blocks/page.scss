@@ -1,4 +1,20 @@
 .page__body {
   margin: 0;
   padding: 0;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      @include pseudo(50%, 694px);
+      position: absolute;
+      background-image:
+        linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%),
+        url("/images/index/index-hero-cat-desktop@2x.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
 }

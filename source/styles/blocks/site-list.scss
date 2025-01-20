@@ -1,9 +1,38 @@
-@media (min-width: $tablet-width) {
-  .site-list {
+.site-list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
     @include flex(flex, row, wrap);
     align-items: center;
     margin-left: 89px;
     gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+    margin: 0;
+  }
+}
+
+.site-list__item--current {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      @include pseudo (100%, 2px);
+      position: absolute;
+      background-color: $bg-main;
+      bottom: -8px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      @include pseudo (100%, 2px);
+      position: absolute;
+      background-color: $text-bg;
+      bottom: -8px;
+    }
   }
 }
 
@@ -12,13 +41,18 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $text-main;
-}
 
-@media (min-width: $tablet-width) {
-  .site-list__link {
+  @media (min-width: $tablet-width) {
     @include font ($font-secondary, 400, 18px, 24px);
     text-transform: uppercase;
     text-decoration: none;
     color: $text-main;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font ($font-secondary, 400, 20px, 20px);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $text-bg;
   }
 }

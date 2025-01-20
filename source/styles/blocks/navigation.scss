@@ -1,5 +1,3 @@
-
-
 .navigation {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -8,15 +6,6 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .navigation__toogle {
-    display: none;
-  }
-}
-
-.navigation__list {
-  display: none;
-}
 
 .navigation__toogle {
   background-color: #000000;
@@ -38,5 +27,13 @@
     position: absolute;
     background-color: #000000;
     top: -8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

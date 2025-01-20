@@ -30,6 +30,11 @@
 .footer__academy {
   text-decoration: none;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    max-width: 25%;
+  }
 }
 
 .footer__academy--link {
@@ -48,8 +53,6 @@
   color: $text-secondary;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    right: 23px;
-    top: 7px;
+    padding-right: 23px;
   }
 }
