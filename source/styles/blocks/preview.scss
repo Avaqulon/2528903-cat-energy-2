@@ -16,6 +16,10 @@
 .preview__list {
   @include flex(flex, column, wrap);
 
+  @media (min-width: $laptop-width) {
+    @include flex(flex, row, wrap);
+  }
+
   @media (min-width: $desktop-width) {
     @include flex(flex, row, wrap);
     justify-content: space-between;
@@ -38,15 +42,31 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
-    &:last-child {
-      margin-bottom: 0;
+  @media (min-width: $laptop-width) {
+    min-height: 374px;
+    margin-bottom: 30px;
+    position: relative;
+    width: 48%;
+
+    &:first-child {
+      margin-right: 30px;
     }
 
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
     @include flex(flex, column, nowrap);
     width: 570px;
     min-height: 374px;
     margin-bottom: 0;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -65,6 +85,14 @@
     color: $text-main;
     padding: 74px 1px 27px 53px;
     width: 70%;
+  }
+
+  @media (min-width: $laptop-width) {
+    text-align: center;
+    width: 220px;
+    margin: 77px 0 73px 100px;
+    padding: 0;
+    align-self: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,14 +127,16 @@
   }
 
   @media (min-width: $tablet-width) {
+    position: static;
+
     &::before {
       @include pseudo(200px, 200px);
       background-color: $bg-main;
       border-radius: 50%;
       position: absolute;
+      top: 92px;
       left: auto;
-      top: 70px;
-      right: -20%;
+      right: 63px;
     }
 
 
@@ -116,21 +146,23 @@
       background-repeat: no-repeat;
       background-size: 140px 194px;
       position: absolute;
-      top: 70px;
+      top: 89px;
       left: auto;
-      right: -17%;
+      right: 92px;
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
+    position: static;
+
     &::before {
       @include pseudo(100px, 100px);
       background-color: $bg-main;
       border-radius: 50%;
       position: absolute;
-      top: -30px;
+      top: 30px;
+      left: 52px;
       right: auto;
-      left: -130px;
     }
 
 
@@ -140,8 +172,32 @@
       background-repeat: no-repeat;
       background-size: 70px 97px;
       position: absolute;
-      top: -33px;
-      left: -115px;
+      top: 27px;
+      left: 65px;
+      right: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      @include pseudo(100px, 100px);
+      background-color: $bg-main;
+      border-radius: 50%;
+      position: absolute;
+      top: 47px;
+      left: 33px;
+      right: auto;
+    }
+
+
+    &::after {
+      @include pseudo(70px, 97px);
+      background-image: url("../../icons/stack.svg#index-home-cat");
+      background-repeat: no-repeat;
+      background-size: 70px 97px;
+      position: absolute;
+      top: 44px;
+      left: 48px;
       right: auto;
     }
   }
@@ -170,16 +226,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    position: relative;
+    position: static;
 
     &::before {
       @include pseudo(200px, 200px);
       background-color: $bg-main;
       border-radius: 50%;
       position: absolute;
+      top: 92px;
       left: auto;
-      top: 70px;
-      right: -20%;
+      right: 63px;
     }
 
 
@@ -189,21 +245,23 @@
       background-repeat: no-repeat;
       background-size: 268px 112px;
       position: absolute;
-      top: 110px;
+      top: 138px;
       left: auto;
-      right: -23%;
+      right: 40px;
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
+    position: static;
+
     &::before {
       @include pseudo(100px, 100px);
       background-color: $bg-main;
       border-radius: 50%;
       position: absolute;
-      top: -30px;
+      top: 30px;
+      left: 52px;
       right: auto;
-      left: -130px;
     }
 
 
@@ -213,8 +271,32 @@
       background-repeat: no-repeat;
       background-size: 134px 56px;
       position: absolute;
-      top: -10px;
-      left: -150px;
+      top: 50px;
+      left: 30px;
+      right: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      @include pseudo(100px, 100px);
+      background-color: $bg-main;
+      border-radius: 50%;
+      position: absolute;
+      top: 47px;
+      left: 33px;
+      right: auto;
+    }
+
+
+    &::after {
+      @include pseudo(134px, 56px);
+      background-image: url("../../icons/stack.svg#index-hunter-cat");
+      background-repeat: no-repeat;
+      background-size: 134px 56px;
+      position: absolute;
+      top: 68px;
+      left: 10px;
       right: auto;
     }
   }
@@ -245,11 +327,16 @@
     color: $text-main;
     padding: 27px 0 48px 52px;
     position: static;
-    width: 43%;
+    width: 55%;
 
     &::after {
       display: none;
     }
+  }
+
+  @media (min-width: $laptop-width) {
+    width: 90%;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -257,7 +344,7 @@
     padding: 0;
     padding-left: 52px;
     padding-bottom: 27px;
-    width: 460px;
+    width: 505px;
   }
 }
 
@@ -272,9 +359,10 @@
   @media (min-width: $tablet-width) {
     @include font($font-secondary, 400, 20px, 20px);
     text-align: left;
-    padding-bottom: 57px;
-    padding-left: 52px;
-    width: 107px;
+    padding: 0;
+    margin-bottom: 57px;
+    margin-left: 52px;
+    width: 110px;
   }
 
   @media (min-width: $desktop-width) {
@@ -317,8 +405,8 @@
       @include pseudo(18px, 2px);
       background-color: $text-main;
       position: absolute;
-      top: 28px;
-      right: 10px;
+      top: 10px;
+      right: -39px;
     }
 
     &::after {
@@ -328,12 +416,12 @@
       mask-size: 24px, 12px;
       background-color: $text-main;
       position: absolute;
-      top: 23px;
-      right: 4px;
+      top: 5px;
+      right: -45px;
     }
 
     &:hover::after {
-      right: -3px;
+      right: -50px;
       transition: all 0.6s;
     }
   }

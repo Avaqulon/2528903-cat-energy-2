@@ -4,10 +4,11 @@
 }
 
 .map__wrapper {
-  width: calc(100% - 40px);
-  display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 20px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding: 26px 0;
+  display: grid;
 
   @media (min-width: $tablet-width) {
     @include flex(flex, row, wrap);
@@ -26,6 +27,7 @@
   color: $text-last;
   margin: 0;
   text-align: left;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     @include font($font-secondary, 400, 20px, 26px);

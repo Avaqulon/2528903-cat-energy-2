@@ -48,6 +48,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
+    position: relative;
 
     &::before {
       display: none;
@@ -150,10 +151,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
     width: 559px;
     margin: 0;
+    position: absolute;
     top: -10%;
-    right: 325px;
+    left: 37%;
+    bottom: auto;
   }
 }

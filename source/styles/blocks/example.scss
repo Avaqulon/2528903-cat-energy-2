@@ -76,19 +76,23 @@
 .example__list {
   @include flex (flex, row, nowrap);
   justify-content: space-between;
+  width: 280px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     @include flex (flex, row, wrap);
     max-width: 55%;
     justify-content: flex-start;
     gap: 43px;
+    padding-bottom: 0;
+    width: auto;
+  }
 
-    @media (min-width: $tablet-width) {
-      @include flex (flex, row, wrap);
-      max-width: 375px;
-      justify-content: flex-start;
-      gap: 42px;
-    }
+  @media (min-width: $desktop-width) {
+    @include flex (flex, row, wrap);
+    max-width: 375px;
+    justify-content: flex-start;
+    gap: 42px;
   }
 }
 
@@ -148,30 +152,60 @@
   }
 }
 
+.example__prepare {
+  width: 240px;
+  margin: 0;
+  padding-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 178px;
+    margin: 0 0 0 auto;
+    padding-top: 11px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    width: 436px;
+    margin: 0;
+    padding-top: 55px;
+    padding-left: 0;
+  }
+}
+
 .example__food {
   @include font($font-secondary, 400, 14px, 20px);
   text-transform: uppercase;
-  text-align: center;
   color: $text-main;
-  margin-top: 34px;
 
   @media (min-width: $tablet-width) {
     @include font($font-secondary, 400, 20px, 20px);
     text-transform: uppercase;
-    text-align: right;
     color: $text-main;
-    margin: 0;
-    margin-left: auto;
-    max-width: 25%;
-    padding-top: 11px;
+    padding-left: 6px;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: left;
     color: $text-main;
-    margin: 0;
-    max-width: 70%;
-    padding-top: 55px;
+    padding-left: 0;
+  }
+}
+
+.example__price {
+  @include font($font-secondary, 400, 14px, 20px);
+  text-transform: uppercase;
+  color: $text-main;
+
+  @media (min-width: $tablet-width) {
+    @include font($font-secondary, 400, 20px, 20px);
+    text-transform: uppercase;
+    color: $text-main;
+    padding-left: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $text-main;
+    padding-left: 64px;
   }
 }
 
