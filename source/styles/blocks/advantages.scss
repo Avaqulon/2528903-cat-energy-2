@@ -52,6 +52,11 @@
     row-gap: 37px;
   }
 
+  @media (min-width: $laptop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   @media (min-width: $desktop-width) {
     @include flex(flex, row, wrap);
     justify-content: space-between;

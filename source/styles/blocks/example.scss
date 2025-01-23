@@ -6,6 +6,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include flex( flex, row, wrap);
+    margin: 0 auto;
+    justify-content: center;
     background-image: linear-gradient(#ffffff 0% 8%, #eaeaea 8%);
   }
 }
@@ -29,7 +32,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
     padding-bottom: 146px;
@@ -48,7 +51,8 @@
 
   @media (min-width: $desktop-width) {
     @include flex (flex, column, wrap);
-    width: 1220px;
+    margin: 0;
+    width: 610px;
     justify-content: flex-start;
   }
 }
@@ -225,5 +229,11 @@
   @media (min-width: $desktop-width) {
     display: none;
     padding-right: 63px;
+  }
+}
+
+.example__slider {
+  @media (min-width: $desktop-width) {
+    width: 610px;
   }
 }
