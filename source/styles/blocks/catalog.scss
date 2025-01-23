@@ -1,6 +1,10 @@
 .catalog__title {
   @include font($font-secondary, 400, 36px, 36px);
   color: $text-main;
+  margin: 0;
+  padding-top: 27px;
+  padding-left: 20px;
+  padding-bottom: 41px;
 }
 
 .catalog__button {
@@ -8,4 +12,25 @@
   text-transform: uppercase;
   text-align: center;
   color: $text-bg;
+}
+
+.catalog {
+  position: relative;
+
+  &::before {
+    @include pseudo(100%, 1px);
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.catalog__wrapper {
+  @include flex(flex, row, wrap);
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  justify-content: center;
+  position: relative;
+  column-gap: 30px;
 }

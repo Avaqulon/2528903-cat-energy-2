@@ -2,29 +2,128 @@
   @include font($font-secondary, 400, 16px, 20px);
   text-transform: uppercase;
   color: $text-extra;
+  text-align: left;
+  margin: 0;
+  width: 140px;
+  padding-right: 64px;
+  padding-bottom: 14px;
+  line-height: 20px;
+  align-self: flex-end;
+}
+
+.card__more-subtitle {
+  @include font($font-secondary, 400, 16px, 20px);
+  text-transform: uppercase;
+  color: $text-extra;
+  text-align: center;
+  margin: 0;
+  padding-top: 53px;
+  padding-bottom: 8px;
 }
 
 .card__char-desk {
   @include font($font-primary, 400, 12px, 16px);
-  text-align: center;
+  text-align: left;
   color: $text-secondary;
+  width: 50%;
 }
 
 .card__char-value {
   @include font($font-primary, 400, 12px, 16px);
-  text-align: center;
+  text-align: right;
   color: $text-secondary;
+  width: 50%;
 }
 
 .card__more {
   @include font($font-primary, 400, 12px, 16px);
   text-align: center;
   color: $text-secondary;
+  padding-bottom: 22px;
+}
+
+.card__button {
+  @include font($font-secondary, 400, 16px, 20px);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: $text-bg;
+  padding: 10px 109px;
+  border: none;
+  width: 280px;
+  margin: 0;
 }
 
 .card__button-more {
   @include font($font-secondary, 400, 16px, 20px);
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
+  background-color: $bg-secondary;
   color: $text-secondary;
+  padding: 10px 94px;
+  border: none;
+  width: 280px;
+  margin: 0;
+}
+
+.card {
+  @include flex(flex, column, wrap);
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.card:last-child {
+  position: relative;
+
+  &::before {
+    @include pseudo(2px, 30px);
+    background-color: #d3d3d3;
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+
+  &::after {
+    @include pseudo(30px, 2px);
+    background-color: #d3d3d3;
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.card__list {
+  padding-bottom: 17px;
+}
+
+.card__picture {
+  position: absolute;
+
+  &:nth-child(4) {
+    top: 14px;
+    left: 25px;
+  }
+
+  &:nth-child(6) {
+    top: 1px;
+    left: 20px;
+  }
+}
+
+.card__item {
+  @include flex(flex, row, wrap);
+  width: 280px;
+  height: 48px;
+  padding-left: 140px;
+
+  &::after {
+    @include pseudo(auto, 1px);
+    position: absolute;
+    background-color: #d9d9d9;
+    bottom: 25px;
+    left: -20px;
+    right: -20px;
+  }
 }
