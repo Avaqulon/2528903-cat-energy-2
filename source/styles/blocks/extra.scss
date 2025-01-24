@@ -2,6 +2,7 @@
   @include font($font-secondary, 400, 24px, 24px);
   text-align: center;
   color: $text-main;
+  margin: 0;
 }
 
 .extra__subtitle {
@@ -28,4 +29,16 @@
   text-transform: uppercase;
   text-align: center;
   color: $text-bg;
+}
+
+.extra {
+  &::before {
+    @include pseudo(auto, 1px);
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    left: -20px;
+    right: -20px;
+    background-color: red;
+  }
 }

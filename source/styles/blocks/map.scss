@@ -29,7 +29,6 @@
   @media (min-width: $desktop-width) {
     @include flex(flex, row, wrap);
     width: 1220px;
-    height: 199px;
     padding: 0;
     padding-top: 93px;
     justify-content: flex-start;

@@ -13,6 +13,12 @@
   }
 }
 
+.example__title-wrapper {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
 .example__title {
   @include font($font-secondary, 400, 36px, 40px);
   text-align: left;
@@ -32,7 +38,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 1220px;
     margin: 0 auto;
     padding: 0;
     padding-bottom: 146px;
