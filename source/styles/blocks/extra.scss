@@ -31,14 +31,15 @@
   color: $text-bg;
 }
 
-.extra {
+/* .extra {
   &::before {
     @include pseudo(auto, 1px);
     display: block;
     position: absolute;
-    bottom: 25px;
+    top: 25px;
     left: -20px;
     right: -20px;
     background-color: red;
   }
 }
+ */

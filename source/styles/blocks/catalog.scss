@@ -16,6 +16,7 @@
 
 .catalog {
   position: relative;
+  overflow-x: hidden;
 
   &::before {
     @include pseudo(100%, 1px);
@@ -31,6 +32,15 @@
   width: calc(100% - 40px);
   margin: 0 auto;
   justify-content: center;
-  position: relative;
   column-gap: 30px;
+  position: relative;
+
+  &::after {
+    @include pseudo(500%, 1px);
+    position: absolute;
+    background-color: #d9d9d9;
+    bottom: 25px;
+    left: -200px;
+    right: -200px;
+  }
 }
