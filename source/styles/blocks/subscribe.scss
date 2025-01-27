@@ -1,13 +1,30 @@
 .subscribe__title {
   @include font($font-secondary, 400, 24px, 24px);
-  text-align: center;
+  text-align: left;
   color: $text-main;
+  position: relative;
+  margin: 0;
+  width: 155px;
+  padding-bottom: 32px;
+
+  &::after {
+    @include pseudo (500%, 2px);
+    background-color: $bg-main;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 106%;
+  }
 }
 
 .subscribe__subtitle {
   @include font($font-secondary, 400, 16px, 24px);
   text-align: center;
   color: $text-main;
+  margin: 0;
+  align-self: center;
+  width: 85%;
+  padding-bottom: 24px;
 }
 
 .subscribe__field {
@@ -16,6 +33,9 @@
   font-size: 20px;
   text-transform: uppercase;
   color: $text-secondary;
+  width: 280px;
+  padding: 11px 13px;
+  margin-bottom: 13px;
 }
 
 .subscribe__button {
@@ -23,4 +43,20 @@
   text-transform: uppercase;
   text-align: center;
   color: $text-secondary;
+  border: none;
+  width: 280px;
+  padding: 15px 26px;
+  margin-bottom: auto;
+}
+
+.subscribe {
+  @include flex(flex, column, nowrap);
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  margin-bottom: 40px;
+}
+
+.subscribe__search {
+  @include flex (flex, row, wrap);
+  justify-content: space-around;
 }
