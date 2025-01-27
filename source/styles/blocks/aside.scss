@@ -2,10 +2,15 @@
   @include font($font-primary, 400, 16px, 20px);
   text-align: center;
   color: $text-bg;
+  display: block;
+  padding-top: 187px;
+  width: 66%;
+  margin: 0 auto;
 }
 
 .aside {
   height: 290px;
+  margin-bottom: 40px;
 }
 
 .aside--gift {
@@ -18,7 +23,7 @@
     background-size: 78px 80px;
     background-color: transparent;
     position: absolute;
-    top: 50%;
+    top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -33,5 +38,7 @@
     background-size: cover;
     min-width: 100%;
     z-index: -1;
+    top: 0;
+    left: 0;
   }
 }
