@@ -73,5 +73,9 @@
     margin: 0;
     margin-bottom: 74px;
     justify-content: space-around;
+
+    &::after {
+      display: none;
+    }
   }
 }
