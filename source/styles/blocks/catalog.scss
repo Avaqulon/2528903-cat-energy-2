@@ -19,6 +19,10 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .catalog__title {
@@ -77,5 +81,11 @@
     &::after {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    gap: 63px 80px;
   }
 }

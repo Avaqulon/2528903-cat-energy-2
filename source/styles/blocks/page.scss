@@ -18,3 +18,11 @@
     }
   }
 }
+
+.page__body-catalog {
+  @media (min-width: $desktop-width) {
+    &::before {
+      display: none;
+    }
+  }
+}
