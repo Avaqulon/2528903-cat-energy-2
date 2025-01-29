@@ -100,12 +100,11 @@
   text-transform: uppercase;
   color: $text-extra;
   text-align: left;
-  margin: 0;
-  width: 140px;
-  padding-right: 64px;
-  padding-bottom: 14px;
-  align-self: flex-end;
   grid-row: 1 / 2;
+  align-self: flex-end;
+  margin: 0;
+  padding-bottom: 14px;
+  padding-right: 35%;
 
   @media (min-width: $tablet-width) {
     @include font($font-secondary, 400, 20px, 24px);
