@@ -70,10 +70,6 @@
     right: -200px;
   }
 
-  @media (min-width: 530px) {
-    justify-self: space-between;
-  }
-
   @media (min-width: $tablet-width) {
     gap: 60px;
     position: static;
