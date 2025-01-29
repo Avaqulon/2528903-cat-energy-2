@@ -75,6 +75,14 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 245px;
+
+    &:last-child {
+      grid-template-columns: 243px;
+    }
+  }
 }
 
 .card__picture {
@@ -132,6 +140,10 @@
     padding-bottom: 5px;
     border-bottom: 1px solid #cdcdcd;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 169px;
+  }
 }
 
 .card__char-desk {
@@ -177,6 +189,11 @@
     padding: 10px 97px;
     width: 250px;
     justify-self: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 169px;
+    padding: 10px 35px;
   }
 }
 
@@ -238,5 +255,10 @@
     width: 250px;
     padding: 10px 75px;
     justify-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    padding: 10px 35px;
   }
 }
