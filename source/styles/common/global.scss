@@ -16,3 +16,7 @@ body {
 *::after {
   box-sizing: border-box;
 }
+
+picture {
+  display: contents;
+}
