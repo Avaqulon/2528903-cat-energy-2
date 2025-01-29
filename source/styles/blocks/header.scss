@@ -50,7 +50,7 @@
 
 //catalog
 
-.header-catalog {
+.header--catalog {
   @include flex (flex, row, nowrap);
   text-align: center;
   align-items: center;

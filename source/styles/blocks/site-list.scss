@@ -65,7 +65,7 @@
   }
 }
 
-.site-list__item-catalog--current {
+.header--catalog .site-list__item--current {
   position: relative;
 
   @media (min-width: $tablet-width) {
