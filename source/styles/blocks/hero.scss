@@ -10,6 +10,21 @@
   @media (min-width: $desktop-width) {
     @include flex(flex, row, wrap);
     margin-bottom: 250px;
+    padding-top: 224px;
+    z-index: -1;
+
+    &::before {
+      @include pseudo(50%, 694px);
+      position: absolute;
+      background-image:
+        linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%),
+        url("/images/index/index-hero-cat-desktop@2x.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
   }
 }
 
