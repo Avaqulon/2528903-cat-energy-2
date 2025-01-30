@@ -11,7 +11,6 @@
     @include flex(flex, row, wrap);
     margin-bottom: 250px;
     padding-top: 224px;
-    z-index: -1;
 
     &::before {
       @include pseudo(50%, 694px);
@@ -23,7 +22,6 @@
       background-size: cover;
       top: 0;
       right: 0;
-      z-index: -1;
     }
   }
 }
@@ -64,6 +62,7 @@
     width: 1220px;
     margin: 0 auto;
     position: relative;
+    z-index: 1;
 
     &::before {
       display: none;
@@ -136,6 +135,17 @@
   padding: 10px 44px;
   width: 280px;
   order: 4;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     @include font($font-secondary, 400, 20px, 26px);

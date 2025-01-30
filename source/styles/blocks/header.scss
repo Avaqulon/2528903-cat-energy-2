@@ -17,6 +17,7 @@
     padding: 0;
     padding-top: 55px;
     padding-bottom: 110px;
+    z-index: 2;
   }
 }
 
@@ -35,6 +36,17 @@
   align-items: center;
   padding-top: 13px;
   padding-left: 20px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.6;
+    outline: none;
+  }
 
   @media (min-width: $tablet-width) {
     @include flex (flex, row, nowrap);
