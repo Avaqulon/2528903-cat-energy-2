@@ -50,6 +50,10 @@
     padding: 0;
     position: static;
     padding-bottom: 84px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 

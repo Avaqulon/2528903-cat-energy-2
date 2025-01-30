@@ -8,6 +8,10 @@
     width: calc(100% - 60px);
     margin-bottom: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .subscribe__title {
@@ -43,6 +47,23 @@
       top: 15px;
       left: -30px;
       right: -30px;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font($font-secondary, 400, 40px, 40px);
+    width: 333px;
+    margin-left: 90px;
+    padding-left: 20px;
+
+    &::after {
+      @include pseudo (1440px, 2px);
+      position: absolute;
+      background-color: $bg-main;
+      top: 18px;
+      left: -90px;
+      right: auto;
       z-index: -1;
     }
   }
@@ -84,6 +105,10 @@
 
   @media (min-width: $tablet-width) {
     width: 376px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 496px;
   }
 }
 
