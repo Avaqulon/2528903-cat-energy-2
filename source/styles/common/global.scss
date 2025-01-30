@@ -9,13 +9,12 @@ body {
   color: $text-main;
 }
 
+picture {
+  display: contents;
+}
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-picture {
-  display: contents;
 }
