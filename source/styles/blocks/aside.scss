@@ -6,6 +6,12 @@
     height: 200px;
     margin-bottom: 80px;
   }
+
+  @media (min-width: $tablet-width) {
+    height: 288px;
+    width: 245px;
+    margin: 0;
+  }
 }
 
 .aside--gift {
@@ -64,6 +70,33 @@
       left: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      @include pseudo(80px, 82px);
+      background-image: url("../../icons/stack.svg#catalog-gift");
+      background-repeat: no-repeat;
+      background-size: 80px 82px;
+      background-color: transparent;
+      position: absolute;
+      top: 100px;
+      left: 83px;
+    }
+
+    &::after {
+      @include pseudo(245px, 288px);
+      position: absolute;
+      background-image:
+        linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%),
+        url("/images/catalog/aside-gift-cat-desktop@2x.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-width: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+  }
 }
 
 .aside__description {
@@ -81,6 +114,14 @@
     padding-left: 60%;
     width: 85%;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 185px;
   }
 }
 

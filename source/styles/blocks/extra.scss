@@ -5,6 +5,11 @@
   @media (min-width: $tablet-width) {
     width: calc(100% - 60px);
   }
+
+  @media (min-width: $desktop-width) {
+    @include flex(flex, row, wrap);
+    width: 1440px;
+  }
 }
 
 .extra__title {
@@ -25,9 +30,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    @include font($font-secondary, 400, 32px, 32px);
     padding-bottom: 80px;
     padding-left: 40px;
-    width: 315px;
+    width: 380px;
     background-color: #ffffff;
 
     &::after {
@@ -36,6 +42,25 @@
       background-color: $bg-main;
       top: 10px;
       left: -30px;
+      right: -30px;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font($font-secondary, 400, 40px, 40px);
+    background-color: transparent;
+    background-image: linear-gradient(to right, #ffffff 0% 32%, transparent 32%);
+    width: 100%;
+    margin-left: 60px;
+    padding-left: 20px;
+
+    &::after {
+      @include pseudo (1440px, 2px);
+      position: absolute;
+      background-color: $bg-main;
+      top: 18px;
+      left: -60px;
       right: -30px;
       z-index: -1;
     }
@@ -68,6 +93,15 @@
     &::before {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    width: 896px;
+    margin-left: 111px;
+    margin-right: 80px;
   }
 }
 
@@ -110,6 +144,15 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
 }
 
 .extra__subtitle {
@@ -123,6 +166,12 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/3;
     grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font($font-secondary, 400, 20px, 20px);
+    place-self: center left;
+    grid-column: 1 / 2;
   }
 }
 
@@ -138,6 +187,12 @@
     grid-row: 1/2;
     grid-column: 3/4;
   }
+
+  @media (min-width: $desktop-width) {
+    @include font($font-primary, 400, 16px, 20px);
+    place-self: center;
+    grid-column: 2 / 3;
+  }
 }
 
 .extra__price {
@@ -150,6 +205,13 @@
   @media (min-width: $tablet-width) {
     grid-column: 4/5;
     grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font($font-primary, 400, 16px, 20px);
+    place-self: center right;
+    padding-right: 40px;
+    grid-column: 3 / 4;
   }
 }
 
@@ -170,5 +232,10 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+    grid-column: 4 / 5;
   }
 }
