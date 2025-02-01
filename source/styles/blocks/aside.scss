@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 288px;
+    height: auto;
     width: 245px;
     margin: 0;
   }
@@ -84,7 +84,7 @@
     }
 
     &::after {
-      @include pseudo(245px, 288px);
+      @include pseudo(245px, 100%);
       position: absolute;
       background-image:
         linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%),

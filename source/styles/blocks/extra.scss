@@ -99,11 +99,11 @@
   @media (min-width: $desktop-width) {
     border: none;
     border-top: 1px solid #cdcdcd;
-    border-bottom: 1px solid #cdcdcd;
     width: 896px;
     margin: 0;
     margin-left: 111px;
     margin-right: 80px;
+    justify-content: flex-start;
   }
 }
 
@@ -154,6 +154,10 @@
     padding: 0;
     padding-top: 15px;
     padding-bottom: 17px;
+
+    &:last-child::after {
+      display: block;
+    }
   }
 }
 
