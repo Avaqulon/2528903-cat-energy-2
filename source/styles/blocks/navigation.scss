@@ -15,6 +15,12 @@
   border: none;
   padding: 0;
 
+  /* &:hover,
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  } */
+
   &::before {
     @include pseudo(24px, 2px);
     position: absolute;

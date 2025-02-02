@@ -103,6 +103,11 @@
   margin-bottom: 13px;
   border: 2px solid #cdcdcd;
 
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 376px;
   }
@@ -121,6 +126,19 @@
   width: 280px;
   padding: 15px 26px;
   margin-bottom: auto;
+  transition: ease-in-out 0.6s;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     width: 256px;
