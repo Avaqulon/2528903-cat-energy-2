@@ -114,10 +114,6 @@
   width: 100%;
   row-gap: 13px;
 
-  @media (min-width: 530px) {
-    width: 46%;
-  }
-
   &::after {
     @include pseudo (100%, 1px);
     position: absolute;
