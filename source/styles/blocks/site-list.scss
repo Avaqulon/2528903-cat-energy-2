@@ -1,5 +1,13 @@
 .site-list {
-  display: none;
+  @media (max-width: $mobile-max) {
+    @include flex(flex, column, nowrap);
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #ffffff;
+  }
 
   @media (min-width: $tablet-width) {
     @include flex(flex, row, wrap);
@@ -11,6 +19,14 @@
   @media (min-width: $desktop-width) {
     max-width: 700px;
     margin: 0;
+  }
+}
+
+.site-list__item {
+  @media (max-width: $mobile-max) {
+    padding-top: 21px;
+    padding-bottom: 22px;
+    border-top: 1px solid #e6e6e6;
   }
 }
 
@@ -41,6 +57,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $text-main;
+  width: 80%;
   transition: ease-in-out 0.3s;
 
   @media (min-width: $tablet-width) {
