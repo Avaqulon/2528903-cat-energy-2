@@ -1,9 +1,9 @@
 .map {
   width: 100%;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: $desktop-width) {
-    position: relative;
     min-height: 400px;
     background-color: $bg-secondary;
   }
@@ -101,13 +101,26 @@
 
 .map__picture {
   width: 100%;
+  z-index: -5;
 
   @media (min-width: $desktop-width) {
-    z-index: 1;
     position: absolute;
     top: 0;
     left: 50%;
     width: 1440px;
     transform: translateX(-50%);
+  }
+}
+
+.map__live {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
   }
 }
