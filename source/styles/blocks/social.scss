@@ -3,13 +3,14 @@
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  padding-right: 3px;
   position: relative;
 
   &::before {
     @include pseudo(100%, 1px);
     position: absolute;
     background-color: #d9d9d9;
-    top: 18%;
+    top: 17%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -18,7 +19,7 @@
     @include pseudo(100%, 1px);
     position: absolute;
     background-color: #d9d9d9;
-    bottom: 18%;
+    bottom: 19%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -42,7 +43,7 @@
 }
 
 .social__item:not(:last-child) {
-  margin-right: 24px;
+  margin-right: 27px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

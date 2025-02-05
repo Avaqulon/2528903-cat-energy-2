@@ -1,6 +1,6 @@
 .advantages {
   width: calc(100% - 40px);
-  margin: 0 auto 49px;
+  margin: 0 auto 26px;
 
   @media (min-width: $tablet-width) {
     width: calc(100% - 60px);
@@ -35,7 +35,7 @@
   text-align: left;
   color: $text-main;
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     @include font($font-secondary, 400, 60px, 60px);
@@ -107,10 +107,10 @@
     background-color: $bg-main;
     background-image: url("../../icons/stack.svg#index-leaf");
     background-repeat: no-repeat;
-    background-size: 30px 32px;
+    background-size: 28px 28px;
     background-position: center;
     position: absolute;
-    top: 0;
+    top: -3px;
     left: 0;
   }
 
@@ -120,7 +120,7 @@
       background-color: $bg-main;
       background-image: url("../../icons/stack.svg#index-leaf");
       background-repeat: no-repeat;
-      background-size: 30px 32px;
+      background-size: 28px 28px;
       background-position: center;
       position: absolute;
       top: 40px;
@@ -141,10 +141,10 @@
     background-color: $bg-main;
     background-image: url("../../icons/stack.svg#index-powder");
     background-repeat: no-repeat;
-    background-size: 26px 29px;
+    background-size: 27px 31px;
     background-position: center;
     position: absolute;
-    top: 0;
+    top: -3px;
     left: 0;
   }
 
@@ -154,7 +154,7 @@
       background-color: $bg-main;
       background-image: url("../../icons/stack.svg#index-powder");
       background-repeat: no-repeat;
-      background-size: 30px 32px;
+      background-size: 27px 31px;
       background-position: center;
       position: absolute;
       top: 40px;
@@ -175,10 +175,10 @@
     background-color: $bg-main;
     background-image: url("../../icons/stack.svg#index-instruments");
     background-repeat: no-repeat;
-    background-size: 25px 30px;
+    background-size: 26px 32px;
     background-position: center;
     position: absolute;
-    top: 0;
+    top: -3px;
     left: 0;
   }
 
@@ -187,7 +187,7 @@
       @include pseudo(80px, 80px);
       background-image: url("../../icons/stack.svg#index-instruments");
       background-repeat: no-repeat;
-      background-size: 30px 32px;
+      background-size: 26px 32px;
       background-position: center;
       background-color: $bg-main;
       position: absolute;
@@ -209,10 +209,10 @@
     background-color: $bg-main;
     background-image: url("../../icons/stack.svg#index-clock");
     background-repeat: no-repeat;
-    background-size: 26px 31px;
+    background-size: 27px 32px;
     background-position: center;
     position: absolute;
-    top: 0;
+    top: -3px;
     left: 0;
   }
 
@@ -221,7 +221,7 @@
       @include pseudo(80px, 80px);
       background-image: url("../../icons/stack.svg#index-clock");
       background-repeat: no-repeat;
-      background-size: 30px 32px;
+      background-size: 27px 32px;
       background-position: center;
       background-color: $bg-main;
       position: absolute;

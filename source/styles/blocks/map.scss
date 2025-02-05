@@ -55,7 +55,7 @@
   color: $text-last;
   margin: 0;
   text-align: left;
-  padding-right: 20px;
+  padding-right: 10px;
 
   @media (min-width: $tablet-width) {
     @include font($font-secondary, 400, 20px, 26px);
@@ -73,7 +73,11 @@
 }
 
 .map__desktop {
-  display: none;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 
   @media (min-width: $desktop-width) {
     display: block;

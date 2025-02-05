@@ -14,8 +14,8 @@
     background-color: #ffffff;
     border: none;
     padding: 0;
-    top: 20px;
-    right: 20px;
+    top: 18px;
+    right: 21px;
   }
 
   @media (min-width: $tablet-width) {
@@ -33,7 +33,7 @@
   background-color: #000000;
   top: 4px;
   right: 0;
-  box-shadow: 0 7px 0 0 #000000, 0 14px 0 0 #000000; //через box-shadow нельзя анимировать, для этого использовать before after
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000; //через box-shadow нельзя анимировать, для этого использовать before after
 }
 
 .navigation--opened {
