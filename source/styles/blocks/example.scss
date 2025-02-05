@@ -2,14 +2,14 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(#ffffff 0% 50%, #eaeaea 50%);
+    background-image: linear-gradient(#ffffff 0% 57%, #eaeaea 57%);
   }
 
   @media (min-width: $desktop-width) {
     @include flex( flex, row, wrap);
     margin: 0 auto;
     justify-content: center;
-    background-image: linear-gradient(#ffffff 0% 8%, #eaeaea 8%);
+    background-image: linear-gradient(#ffffff 0% 13%, #eaeaea 13%);
   }
 }
 
