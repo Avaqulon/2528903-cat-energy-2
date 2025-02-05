@@ -17,7 +17,10 @@
       position: absolute;
       background-image:
         linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%),
-        url("/images/index/index-hero-cat-desktop@2x.webp");
+        image-set(
+          url("/images/index/index-hero-cat-desktop@1x.webp") 1x,
+          url("/images/index/index-hero-cat-desktop@2x.webp") 2x
+        );
       background-repeat: no-repeat;
       background-size: cover;
       top: 0;
@@ -39,7 +42,10 @@
     min-width: 100%;
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%),
-      url("/images/index/index-hero-cat-mobile@2x.webp");
+      image-set(
+        url("/images/index/index-hero-cat-mobile@1x.webp") 1x,
+        url("/images/index/index-hero-cat-mobile@2x.webp") 2x
+      );
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
