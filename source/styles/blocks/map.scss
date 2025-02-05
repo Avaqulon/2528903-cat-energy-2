@@ -13,6 +13,14 @@
   background-color: #f2f2f2;
 }
 
+.map__prewrapper {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 93px 0 0;
+  }
+}
+
 .map__wrapper {
   grid-template-columns: 1fr 1fr;
   width: calc(100% - 40px);
@@ -32,9 +40,9 @@
 
   @media (min-width: $desktop-width) {
     @include flex(flex, row, wrap);
-    width: 1220px;
+    width: 565px;
     padding: 0;
-    padding-top: 93px;
+    margin: 0;
     justify-content: flex-start;
     position: relative;
     z-index: 2;
@@ -101,7 +109,7 @@
 
 .map__picture {
   width: 100%;
-  z-index: -5;
+  display: block;
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -113,14 +121,20 @@
 }
 
 .map__live {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
   width: 100%;
+  display: block;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 100%;
   }
 }
