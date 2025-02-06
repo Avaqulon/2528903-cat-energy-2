@@ -40,6 +40,10 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 27px;
+  }
 }
 
 .social__item {

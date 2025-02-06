@@ -65,7 +65,7 @@
 
   @media (min-width: $desktop-width) {
     width: 242px;
-    padding: 60px 0 60px 79px;
+    padding: 63px 0 60px 79px;
     background-color: #ffffff;
   }
 }
@@ -85,8 +85,9 @@
 
   @media (min-width: $desktop-width) {
     width: 323px;
-    padding: 60px 79px 60px 87px;
+    padding: 63px 79px 60px 87px;
     background-color: #ffffff;
+    text-align: left;
   }
 }
 
