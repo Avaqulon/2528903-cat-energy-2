@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     @include flex(flex, row, wrap);
-    margin-bottom: 250px;
+    margin-bottom: 266px;
     padding-top: 224px;
     height: auto;
 
@@ -193,8 +193,9 @@
     width: 559px;
     margin: 0;
     position: absolute;
-    top: -10%;
-    left: 37%;
+    top: -29%;
     bottom: auto;
+    left: 36%;
+    transform: translate(6px, 1px);
   }
 }

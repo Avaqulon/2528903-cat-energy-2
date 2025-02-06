@@ -32,14 +32,14 @@
   margin: 0;
   padding-top: 27px;
   padding-left: 20px;
-  padding-bottom: 41px;
+  padding-bottom: 50px;
   position: relative;
 
   &::after {
     @include pseudo(100%, 1px);
     background-color: #ebebeb;
     position: absolute;
-    bottom: 20px;
+    bottom: 14px;
     left: 0;
   }
 
@@ -64,12 +64,13 @@
   justify-content: center;
   column-gap: 30px;
   position: relative;
+  margin-bottom: 15px;
 
   &::after {
     @include pseudo(500%, 1px);
     position: absolute;
     background-color: #d9d9d9;
-    bottom: 25px;
+    bottom: 10px;
     left: -200px;
     right: -200px;
   }

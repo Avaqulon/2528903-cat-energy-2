@@ -18,7 +18,7 @@
   text-align: left;
   color: $text-main;
   margin: 0;
-  padding-bottom: 49px;
+  padding-bottom: 50px;
   position: relative;
   width: 230px;
 
@@ -27,7 +27,7 @@
     position: absolute;
     background-color: $bg-main;
     top: 10px;
-    left: 106%;
+    left: 115%;
   }
 
   @media (min-width: $tablet-width) {
@@ -72,13 +72,13 @@
   justify-content: center;
   column-gap: 30px;
   position: relative;
-  padding-bottom: 54px;
+  padding-bottom: 20px;
 
   &::before {
     @include pseudo (100%, 1px);
     position: absolute;
     background-color: #cdcdcd;
-    top: -25px;
+    top: -14px;
     left: 0;
   }
 
@@ -109,7 +109,7 @@
 .extra__item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-bottom: 31px;
+  padding-bottom: 34px;
   position: relative;
   width: 100%;
   row-gap: 13px;

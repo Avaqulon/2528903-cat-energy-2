@@ -183,13 +183,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 22px;
+
     &::before {
       @include pseudo(100px, 100px);
       background-color: $bg-main;
       border-radius: 50%;
       position: absolute;
       top: 47px;
-      left: 33px;
+      left: 52px;
       right: auto;
     }
 
@@ -200,8 +202,8 @@
       background-repeat: no-repeat;
       background-size: 70px 97px;
       position: absolute;
-      top: 44px;
-      left: 48px;
+      top: 41px;
+      left: 67px;
       right: auto;
     }
   }
@@ -285,13 +287,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 64px;
+
     &::before {
       @include pseudo(100px, 100px);
       background-color: $bg-main;
       border-radius: 50%;
       position: absolute;
       top: 47px;
-      left: 33px;
+      left: 52px;
       right: auto;
     }
 
@@ -302,8 +306,8 @@
       background-repeat: no-repeat;
       background-size: 134px 56px;
       position: absolute;
-      top: 68px;
-      left: 10px;
+      top: 67px;
+      left: 35px;
       right: auto;
     }
   }
@@ -374,10 +378,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    //width: 110px;
-    //padding: 0;
-    margin-left: 52px;
-    //margin-bottom: 59px;
+    margin-left: 53px;
+    margin-bottom: 64px;
   }
 }
 

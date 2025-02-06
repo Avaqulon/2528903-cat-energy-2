@@ -9,7 +9,7 @@
     @include flex( flex, row, wrap);
     margin: 0 auto;
     justify-content: center;
-    background-image: linear-gradient(#ffffff 0% 13%, #eaeaea 13%);
+    background-image: linear-gradient(#ffffff 0% 19%, #eaeaea 19%);
   }
 }
 
@@ -81,7 +81,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 69px;
-    width: 436px;
+    width: 433px;
   }
 }
 
@@ -161,7 +161,8 @@
 
   @media (min-width: $desktop-width) {
     background-color: #eaeaea;
-    top: 16px;
+    top: 11px;
+    right: 5px;
     padding-right: 0;
   }
 }
@@ -182,8 +183,8 @@
     max-width: 100%;
     width: 436px;
     margin: 0;
-    padding-top: 55px;
-    padding-left: 0;
+    padding-top: 61px;
+    padding-left: 2px;
   }
 }
 
@@ -223,7 +224,7 @@
     color: $text-main;
     display: inline;
     padding-top: 0;
-    padding-left: 64px;
+    padding-left: 60px;
   }
 }
 

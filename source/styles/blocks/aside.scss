@@ -24,7 +24,7 @@
     background-size: 78px 80px;
     background-color: transparent;
     position: absolute;
-    top: 33%;
+    top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -116,6 +116,7 @@
   padding-top: 187px;
   width: 66%;
   margin: 0 auto;
+  padding-right: 3px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -123,6 +124,7 @@
     padding-left: 60%;
     width: 85%;
     margin: 0;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -132,17 +134,5 @@
     padding: 0;
     padding-top: 185px;
     padding-bottom: 30px;
-  }
-}
-
-.aside__tablet {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: 770px) {
-    display: none;
   }
 }
