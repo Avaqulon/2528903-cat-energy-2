@@ -8,6 +8,8 @@
 
   @media (min-width: $tablet-width) {
     width: calc(100% - 60px);
+    margin-top: 0;
+    padding-bottom: 98px;
   }
 
   @media (min-width: $desktop-width) {

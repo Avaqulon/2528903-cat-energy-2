@@ -33,9 +33,7 @@
     justify-content: space-between;
     margin: 0 auto;
     width: calc(100% - 140px);
-    padding: 0;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding: 61px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,18 +67,6 @@
     width: 242px;
     padding: 60px 0 60px 79px;
     background-color: #ffffff;
-  }
-}
-
-.map__desktop {
-  display: block;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
   }
 }
 

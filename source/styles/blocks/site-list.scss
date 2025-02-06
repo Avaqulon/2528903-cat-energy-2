@@ -12,13 +12,15 @@
   @media (min-width: $tablet-width) {
     @include flex(flex, row, wrap);
     align-items: center;
-    margin-left: 89px;
     gap: 33px;
+    padding-right: 4px;
+    padding-top: 2px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 700px;
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -38,7 +40,7 @@
       @include pseudo (100%, 2px);
       position: absolute;
       background-color: $bg-main;
-      bottom: -8px;
+      bottom: -10px;
     }
   }
 

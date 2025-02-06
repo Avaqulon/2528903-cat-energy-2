@@ -30,7 +30,7 @@
     padding: 0;
     width: 30%;
     gap: 24px;
-    padding-left: 23px;
+    padding-left: 30px;
 
     &::before {
       display: none;
@@ -38,6 +38,22 @@
 
     &::after {
       display: none;
+    }
+  }
+}
+
+.social__item {
+  @media (min-width: $tablet-width) {
+    &:first-child {
+      padding-left: 7px;
+    }
+
+    &:nth-child(2) {
+      padding-left: 2px;
+    }
+
+    &:last-child {
+      padding-left: 3px;
     }
   }
 }

@@ -5,12 +5,14 @@
 
   @media (min-width: $tablet-width) {
     @include flex(flex, column, wrap);
+    height: 790px;
   }
 
   @media (min-width: $desktop-width) {
     @include flex(flex, row, wrap);
     margin-bottom: 250px;
     padding-top: 224px;
+    height: auto;
 
     &::before {
       @include pseudo(50%, 694px);
@@ -94,7 +96,7 @@
     margin-left: 120px;
     min-width: 55%;
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -121,7 +123,7 @@
     text-align: left;
     color: $text-main;
     margin-left: 120px;
-    padding-bottom: 40px;
+    padding-bottom: 49px;
     padding-right: 0;
   }
 
@@ -184,7 +186,7 @@
     position: relative;
     width: 709px;
     margin-left: 30px;
-    bottom: 80px;
+    bottom: 83px;
   }
 
   @media (min-width: $desktop-width) {

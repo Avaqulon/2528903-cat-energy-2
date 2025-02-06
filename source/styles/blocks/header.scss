@@ -56,17 +56,17 @@
     @include flex (flex, row, nowrap);
     align-items: center;
     padding: 0;
-    width: 174px;
-  }
-
-  @media (min-width: $desktop-width) {
     width: 210px;
   }
 }
 
+.header__logo img {
+  padding-right: 3px;
+}
+
 .header__sprite-logo-words {
   margin: 0 auto;
-  padding-right: 35px;
+  padding-right: 28px;
   width: 150px;
 
   @media (min-width: $desktop-width) {

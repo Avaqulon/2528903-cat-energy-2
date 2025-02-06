@@ -41,7 +41,7 @@
     @include font($font-secondary, 400, 60px, 60px);
     text-align: left;
     color: $text-main;
-    padding-bottom: 72px;
+    padding-bottom: 32px;
   }
 }
 
@@ -49,12 +49,14 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 37px;
+    gap: 37px 60px;
     counter-reset: number 0;
+    padding-bottom: 47px;
   }
 
   @media (min-width: $laptop-width) {
     display: grid;
+    column-gap: 0;
     grid-template-columns: repeat(4, 1fr);
   }
 
@@ -62,6 +64,7 @@
     @include flex(flex, row, wrap);
     justify-content: space-between;
     row-gap: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -87,7 +90,20 @@
       counter-increment: number;
       position: absolute;
       top: 0;
-      right: 0;
+      right: 9px;
+      transform: translateX(-50%);
+      color: #f2f2f2;
+      z-index: -1;
+    }
+
+    &:first-child::after {
+      @include font($font-secondary, 400, 280px, 280px);
+      content: counter(number);
+      counter-increment: number;
+      position: absolute;
+      top: 0;
+      right: 45px;
+      transform: translateX(-50%);
       color: #f2f2f2;
       z-index: -1;
     }
@@ -247,7 +263,7 @@
     text-align: left;
     padding: 0;
     padding-top: 151px;
-    width: 70%;
+    width: 75%;
   }
 
   @media (min-width: $desktop-width) {
