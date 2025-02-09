@@ -106,12 +106,21 @@
     margin-top: 29px;
     margin-bottom: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5px;
+  }
 }
 
 .card__picture--big {
   @media (min-width: $tablet-width) {
     margin-top: 15px;
     margin-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 17px;
+    margin-bottom: -8px;
   }
 }
 
@@ -135,6 +144,11 @@
     grid-row: 2/3;
     width: 150px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 3px;
+    padding-right: 3px;
+  }
 }
 
 .card__list {
@@ -148,6 +162,10 @@
     grid-column: 1/-1;
     justify-self: center;
     grid-row: 3/4;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 28px;
   }
 }
 
@@ -251,6 +269,10 @@
     place-self: center center;
     grid-row: 1/2;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .card__more-description {
@@ -266,6 +288,10 @@
     padding: 0;
     padding-top: 148px;
     grid-row: 1/2;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 130px;
   }
 }
 

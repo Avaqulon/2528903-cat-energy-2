@@ -122,10 +122,18 @@
     margin-top: 0;
     margin-left: 9px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 13px;
+  }
 }
 
 .header--catalog img {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin-left: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }

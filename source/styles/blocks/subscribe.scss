@@ -11,6 +11,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+    margin-bottom: 88px;
   }
 }
 
@@ -54,14 +55,15 @@
   @media (min-width: $desktop-width) {
     @include font($font-secondary, 400, 40px, 40px);
     width: 333px;
-    margin-left: 90px;
-    padding-left: 20px;
+    margin-left: 70px;
+    padding-left: 40px;
+    padding-bottom: 71px;
 
     &::after {
       @include pseudo (1500%, 2px);
       position: absolute;
       background-color: $bg-main;
-      top: 18px;
+      top: 17px;
       left: -50%;
       right: auto;
       transform: translateX(-50%);

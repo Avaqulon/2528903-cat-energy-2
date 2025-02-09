@@ -106,6 +106,12 @@
       bottom: -8px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      bottom: -10px;
+    }
+  }
 }
 
 //catalog
